@@ -84,14 +84,14 @@ body{
   font-size: 18px;
 }
 
-.container h2{
+.container .a-me{
   top: 735px;
   position: absolute;
   padding: 5px;
   border-bottom: 2px solid #e45447;
 }
 
-.container h2:after{
+.container .a-me:after{
   content: '';
   position: absolute;
   left: 0;
@@ -103,7 +103,7 @@ body{
   transition: 0.5s;
 }
 
-.container h2:hover:after{
+.container .a-me:hover:after{
   content: '';
   position: absolute;
   left: 55px;
@@ -306,6 +306,123 @@ a:hover .fa{
   background: #fff;
 }
 
+.container.job-history{
+  background: #fff;
+  display: flex;
+  height: 600px;
+}
+
+.container.job-history .h-content{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  top: 100px;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 220px 220px;
+  grid-gap: 0 20px;
+}
+
+.h-box{
+  height: 160px;
+  width: 430px;
+  border: 1px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #f1f2f6;
+  border: 1px solid #f1f2f6;
+}
+
+.h-box:hover{
+  background: #70a1ff;
+}
+
+.h-box:hover .h-right{
+  background: #fff;
+  cursor: pointer;
+}
+
+.box-content .h-left{
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  padding: 10px;
+  margin: 10px;
+  /*border: 1px solid black;*/
+}
+
+.box-content .h-left h2, h3{
+  margin: 0;
+}
+
+.box-content .h-left h3{
+  font-size: 12px;
+}
+
+.box-content .h-right{
+  display: inline-block;
+  width: 190px;
+  height: 25px;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #70a1ff;
+  border-radius: 25px;
+}
+
+.box-content .h-right h3.date{
+  margin: 5px 5px;
+  font-size: 16px;
+  position: absolute;
+}
+
+.caption{
+  display: flex;
+  position: absolute;
+  top: 1580px;
+  border-bottom: 2px solid #e45447;
+  width: 150px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.caption:after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -6px;
+  width: 10px;
+  height: 10px;
+  background: #e45447;
+  border-radius: 7px;
+  transition: 0.5s;
+}
+
+.caption:hover:after{
+  content: '';
+  position: absolute;
+  right: 75px;
+  bottom: -6px;
+  width: 10px;
+  height: 10px;
+  background: #e45447;
+  border-radius: 7px;
+  transition: 0.5s;
+}
+
+.caption h2{
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px 10px 10px 5px;
+}
+
 footer p{
-  color: white;
+  color: #fff;
+}
+
+footer p span{
+  color: #78e08f;
 }
