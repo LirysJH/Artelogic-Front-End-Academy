@@ -63,14 +63,25 @@ body{
   justify-content: center;
   align-items: center;
 }
+
 .container .text{
   text-align: justify;
   position: relative;
-  font-size: 18px;
+  width: 440px;
   margin: 10px;
   border: 3px solid red;
   border-radius: 10px;
   transition: 1s ease-in-out;
+}
+
+.container .text:hover{
+  color: white;
+  background: red;
+  transition: 1s ease-in-out;
+}
+
+.container .text p{
+  font-size: 18px;
 }
 
 .container h2{
@@ -104,17 +115,26 @@ body{
   transition: 0.5s;
 }
 
-.container .text:hover{
-  color: white;
-  background: red;
-  transition: 1s ease-in-out;
-}
-
 .container p{
   width: 400px;
   height: 100%;
   margin: 10px;
   padding: 10px;
+}
+
+.container.about{
+  display: flex;
+  background: white;
+}
+
+.container.about .about-content{
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  width: 100%;
+  padding: 30px;
+  grid-template-columns: 310px 450px;
+  grid-gap: 0 20px;
 }
 
 .card{
@@ -166,16 +186,12 @@ body{
   z-index: 5;
   background: #344;
   top: 0;
-  position: -webkit-sticky;
+  position: -webkit-sticky; /* Safari */
   position: sticky;
   height: 100px;
 }
 
-.container.about{
-  background: white;
-}
-
-.container .block{
+.container .i-block{
   display: flex;
 }
 
