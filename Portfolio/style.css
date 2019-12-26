@@ -511,3 +511,88 @@ footer p span{
     transition: 0.5s;
   }
 }
+
+@media screen and (max-width: 991px){
+
+    .logo-box h1{
+      position: absolute;
+      color: #fff;
+      top: 450px;
+      font-size: 30px;
+      padding: 50px;
+    }
+
+    .container.about{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      background: white;
+      height: 650px;
+      width: 100%;
+    }
+
+    .container.about .about-content{
+      justify-content: center;
+      align-items: center;
+      display: block;
+    }
+
+    a .fa{
+      font-size: 20px;
+    }
+
+    a:hover .fa{
+      font-size: 25px;
+    }
+
+    .container-samples{
+      height: 1400px;
+      width: 100%;
+    }
+
+    .bg-elem{
+      display: block;
+    }
+
+    .bg-elem .box{
+      margin: 10px;
+      padding: 10px;
+      position: relative;
+      display: block;
+      width: 260px;
+      height: 300px;
+      background: #eccc68;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid #000;
+    }
+
+    .content{
+      position: relative;
+      padding: 20px;
+      color: #000;
+    }
+
+    .container.job-history{
+      height: 850px;
+    }
+
+    .container.job-history .h-content{
+      display: block;
+    }
+
+    .caption{
+      top: 2820px;
+    }
+    .caption:hover:after{
+      content: '';
+      position: absolute;
+      right: 75px;
+      bottom: -6px;
+      width: 10px;
+      height: 10px;
+      background: #e45447;
+      border-radius: 7px;
+      transition: 0.5s;
+    }
+}
