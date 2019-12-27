@@ -8,169 +8,75 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <header class="container contacts">
-      <div class="i-block">
-        <div class="icon">
-          <a href="https://twitter.com" target="_blank"> <i class="fa fa-twitter"></i> </a>
+    <header class="header container__header menu">
+      <div class="sticky-menu">
+        <div class="logo">
+          <h2 class="symbols">SN</h2>
         </div>
-        <div class="icon">
-          <a href="https://facebook.com" target="_blank"> <i class="fa fa-facebook-square"></i> </a>
-        </div>
-        <div class="icon">
-          <a href="https://www.instagram.com" target="_blank"> <i class="fa fa-instagram"></i> </a>
-        </div>
-        <div class="icon">
-          <a href="https://web.telegram.org" target="_blank"> <i class="fa fa-telegram"></i> </a>
-        </div>
+        <ul class="navigation">
+          <li class="nav-item"><a href="#home">Home</a></li>
+          <li class="nav-item"><a href="#">About</a></li>
+          <li class="nav-item"><a href="#">Portfolio</a></li>
+          <li class="nav-item"><a href="#">Pages</a></li>
+          <li class="nav-item"><a href="#">Blog</a></li>
+        </ul>
       </div>
     </header>
-    <main>
-      <section>
-        <div class="main-container">
-          <div class="main-box">
-            <div class="logo-box">
-            <h1>Responsive Website</h1>
-            </div>
-            <img src="images/0.jpg" alt="">
+    <main class="main">
+      <section id="home" class="section home-area">
+        <div class="profile">
+          <h1 class="home-caption">Serhiy Nadtochiy</h1>
+          <div class="profile-img">
+            <img src="images/web-dev.jpg" alt="" />
           </div>
-        </div>
-        <div class="container about">
-          <h2 class="a-me">About Me</h2>
-          <div class="about-content">
-            <div class="card">
-              <div class="face front">
-                <img src="images/1.jpg" alt="">
-              </div>
-              <div class="face back">
-                <h3>Description</h2>
-              </div>
-            </div>
-            <div class="text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Integer aliquam lorem viverra mollis porta.
-                Aenean scelerisque et ex in venenatis.
-                Donec cursus egestas turpis in pretium.
-                Phasellus sit amet lobortis nisi.
-                Donec quis suscipit nulla.
-                Maecenas sit amet sagittis mauris, in accumsan nisi.
-                Pellentesque habitant morbi tristique senectus et netus et
-                malesuada fames ac turpis egestas. Vivamus mattis tristique sagittis.
-                Sed iaculis vitae erat vel venenatis.
-                </p>
-            </div>
+          <div class="profile-desc">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Integer aliquam lorem viverra mollis porta.
+              Aenean scelerisque et ex in venenatis.
+              Donec cursus egestas turpis in pretium.
+              Phasellus sit amet lobortis nisi.
+              Donec quis suscipit nulla.
+              Maecenas sit amet sagittis mauris, in accumsan nisi.
+            </p>
           </div>
-        </div>
-        <div class="container-samples">
-          <div class="bg-elem">
-            <div class="box photo1">
-              <div class="content">
-                <h2>01</h2>
-                <h3>Sample One</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer aliquam lorem viverra mollis porta.
-                  Aenean scelerisque et ex in venenatis.
-                  Donec cursus egestas turpis in pretium.</p>
-                <a href="#">Read More</a>
-              </div>
+          <div class="i-block">
+            <div class="icon">
+              <a href="https://www.linkedin.com" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
             </div>
-            <div class="box photo2">
-              <div class="content">
-                <h2>02</h2>
-                <h3>Sample Two</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer aliquam lorem viverra mollis porta.
-                  Aenean scelerisque et ex in venenatis.
-                  Donec cursus egestas turpis in pretium.</p>
-                <a href="#">Read More</a>
-              </div>
+            <div class="icon">
+              <a href="https://facebook.com" target="_blank">
+                <i class="fa fa-facebook-square"></i>
+              </a>
             </div>
-            <div class="box photo3">
-              <div class="content">
-                <h2>03</h2>
-                <h3>Sample Three</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer aliquam lorem viverra mollis porta.
-                  Aenean scelerisque et ex in venenatis.
-                  Donec cursus egestas turpis in pretium.</p>
-                <a href="#">Read More</a>
-              </div>
+            <div class="icon">
+              <a href="https://www.instagram.com" target="_blank">
+                <i class="fa fa-instagram"></i>
+              </a>
             </div>
-            <div class="box photo4">
-              <div class="content">
-                <h2>04</h2>
-                <h3>Sample Four</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer aliquam lorem viverra mollis porta.
-                  Aenean scelerisque et ex in venenatis.
-                  Donec cursus egestas turpis in pretium.</p>
-                <a href="#">Read More</a>
-              </div>
+            <div class="icon">
+              <a href="https://web.telegram.org" target="_blank">
+                <i class="fa fa-telegram"></i>
+              </a>
             </div>
           </div>
         </div>
-        <div class="container job-history">
-          <div class="caption">
-            <h2>Job History</h2>
-          </div>
-          <div class="h-content">
-            <div class="h-box">
-              <div class="box-content">
-                <div class="h-left">
-                  <h2>Web Dev</h2>
-                  <h3><i>City</i></h3>
-                </div>
-                <div class="h-right">
-                  <h3 class="date">15th of Jan to Present</h3>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer aliquam lorem viverra mollis porta.</p>
-              </div>
-            </div>
-            <div class="h-box">
-              <div class="box-content">
-                <div class="h-left">
-                  <h2>Web Dev</h2>
-                  <h3><i>City</i></h3>
-                </div>
-                <div class="h-right">
-                  <h3 class="date">15th of Jan to Present</h3>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer aliquam lorem viverra mollis porta.</p>
-              </div>
-            </div>
-            <div class="h-box">
-              <div class="box-content">
-                <div class="h-left">
-                  <h2>Web Dev</h2>
-                  <h3><i>City</i></h3>
-                </div>
-                <div class="h-right">
-                  <h3 class="date">15th of Jan to Present</h3>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer aliquam lorem viverra mollis porta.</p>
-              </div>
-            </div>
-            <div class="h-box">
-              <div class="box-content">
-                <div class="h-left">
-                  <h2>Web Dev</h2>
-                  <h3><i>City</i></h3>
-                </div>
-                <div class="h-right">
-                  <h3 class="date">15th of Jan to Present</h3>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer aliquam lorem viverra mollis porta.</p>
-              </div>
-            </div>
-          </div>
+        <div class="img-box">
+          <img src="images/0.jpg" alt="" />
+        </div>
+      </section>
+      <section class="section about-me">
+        <div class="container">
+
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <p align='center'>Copyright &copy; 2019 | Demo Website made by <span>Lirys<span></p>
+    <footer class="footer container__footer">
+      <div class="content__footer">
+        <p class="copyright">Copyright &copy; 2019 | Demo Website made by <span class="nickname">Lirys<span></p>
+      </div>
     </footer>
   </body>
 </html>
