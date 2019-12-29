@@ -464,5 +464,162 @@ body {
   transition: background ease-out 1s;
 }
 
+/* SEVICE OFFERS SECTION */
+
+.service-offers {
+  background: rgba(0, 0, 0, .02);
+  height: 500px;
+}
+
+.service-offers .service-container {
+  display: flex;
+  position: relative;
+  width: 80%;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-offers .service-container .service-box {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.service-offers .service-container .service-box .service-caption {
+  display: flex;
+  position: relative;
+  height: 8%;
+  width: 15%;
+  border-bottom: 2px solid #ff7f50;
+  margin: 10px 10px 60px;
+  cursor: pointer;
+}
+
+.service-offers .service-container .service-box .service-caption::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -6px;
+  width: 10px;
+  height: 10px;
+  background: #ff7f50;
+  border-radius: 7px;
+  transition: right ease-out .5s;
+}
+
+.service-offers .service-container .service-box
+.service-caption:hover::after {
+  content: '';
+  position: absolute;
+  right: 50%;
+  bottom: -6px;
+  width: 10px;
+  height: 10px;
+  background: #ff7f50;
+  border-radius: 7px;
+  transition: right ease-out .5s;
+}
+
+.service-offers .service-container .service-box .service-content {
+  display: flex;
+  position: relative;
+  height: 70%;
+}
+
+.service-offers .service-container .service-box .service-content
+.web-design {
+  background: #EAB543;
+}
+
+.service-offers .service-container .service-box .service-content
+.app-development {
+  background: #58B19F;
+}
+
+.service-offers .service-container .service-box .service-content
+.web-development {
+  background: #8854d0;
+}
+
+.service-offers .service-container .service-box .service-content
+.ui-ux {
+  background: #20bf6b;
+}
+
+.service-offers .service-container .service-box .service-content
+.service-blocks {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-gap: 20px 40px;
+  height: 300px;
+}
+
+.service-offers .service-container .service-box .service-content
+.service-blocks .s-block {
+  display: block;
+  position: relative;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.service-offers .service-container .service-box .service-content
+.service-blocks .s-block .s-img-box,
+.service-offers .service-container .service-box .service-content
+.service-blocks .s-block h3,
+.service-offers .service-container .service-box .service-content
+.service-blocks .s-block p {
+  display: flex;
+  position: relative;
+  padding: 10px 10px;
+  color: #fff;
+}
+
+.s-block .read-more {
+  display: flex;
+  position: relative;
+  margin: 20px;
+  width: 50%;
+  height: 35px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color ease-out .5s,
+              background ease-out .5s,
+}
+
+.s-block.web-design .read-more:hover {
+  color: #EAB543;
+  background: #fff;
+  transition: color ease-out .5s,
+              background ease-out .5s;
+}
+
+.s-block.app-development .read-more:hover {
+  color: #58B19F;
+  background: #fff;
+  transition: color ease-out .5s,
+              background ease-out .5s;
+}
+
+.s-block.web-development .read-more:hover {
+  color: #8854d0;
+  background: #fff;
+  transition: color ease-out .5s,
+              background ease-out .5s;
+}
+
+.s-block.ui-ux .read-more:hover {
+  color: #20bf6b;
+  background: #fff;
+  transition: color ease-out .5s,
+              background ease-out .5s;
+}
+
 /* MEDIA */
 /* 1200 1024 768 568 320 */
