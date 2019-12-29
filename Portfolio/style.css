@@ -35,6 +35,7 @@ body {
 }
 
 /* HEADER */
+/* MENU */
 
 .menu {
   display: flex;
@@ -85,6 +86,32 @@ body {
 .menu .sticky-menu .navigation .nav-item a:hover {
   color: #ff7f50;
   cursor: pointer;
+}
+
+.menu .sticky-menu .navigation .nav-item.with-arrow .drop-navigation {
+  display: none;
+  position: absolute;
+  margin: 20px -12px;
+  padding: 5px 10px;
+  background: #344;
+  list-style:none;
+  height: 130px;
+  width: 140px;
+  border-radius: 0 0 10px 10px;
+}
+
+.menu .sticky-menu .navigation .nav-item.with-arrow:hover .drop-navigation {
+  display: block;
+}
+
+.menu .sticky-menu .navigation .nav-item.with-arrow .drop-navigation .drop-nav-item {
+  margin: 10px 0;
+}
+
+.menu .sticky-menu .navigation .nav-item.with-arrow .drop-navigation.right-nav {
+  margin: 20px -80px;
+  height: 70px;
+  width: 120px;
 }
 
 /* FOOTER */
@@ -230,7 +257,6 @@ body {
   transition: 1s ease-out;
   cursor: pointer;
   transform: rotateY(0deg);
-  backface-visibility: hidden;
 }
 
 .about-me .img-box::before {
