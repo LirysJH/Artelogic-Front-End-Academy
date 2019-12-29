@@ -116,7 +116,7 @@ body {
 
 /* FOOTER */
 
-.container__footer .content__footer .copyright {
+.container__footer .content-footer .copyright {
   color: #fff;
   text-align: center;
   padding: 30px;
@@ -332,6 +332,136 @@ body {
   position: relative;
   width: 100%;
   height: 50%;
+}
+
+/* LATEST WORKS SECTION */
+
+.latest-works {
+  background: rgba(0, 0, 0, .02);
+}
+
+/* JOB HISTORY SECTION */
+
+.job-history {
+  display: block;
+  position: relative;
+}
+
+.job-history .h-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.job-history .h-container .h-caption {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 10%;
+  height: 10%;
+  border-bottom: 2px solid #ff7f50;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: width ease-out .5s;
+}
+
+.job-history .h-container .h-caption:hover {
+  width: 15%;
+  transition: width ease-out .5s;
+}
+
+.job-history .h-container .h-caption::after {
+  content: '';
+  position: absolute;
+  left: 48%;
+  bottom: -6px;
+  width: 10px;
+  height: 10px;
+  background: #ff7f50;
+  border-radius: 7px;
+  transition: left ease-out .5s;
+}
+
+.job-history .h-container .h-caption h2 {
+  display: flex;
+  position: relative;
+  padding: 5px 10px;
+}
+
+.job-history .h-container .h-box {
+  display: grid;
+  position: relative;
+  width: 60%;
+  height: 80%;
+  margin: 70px 0 20px;
+  grid-template-columns: 400px 400px;
+  grid-gap: 20px 40px;
+}
+
+.job-history .h-container .h-box .h-content {
+  background: rgba(0, 0, 0, .02);
+  border-radius: 10px;
+  transition: background ease-out 1s;
+}
+
+.job-history .h-container .h-box .h-content .top-left {
+  display: inline-block;
+  position: relative;
+}
+
+.job-history .h-container .h-box .h-content .top-left .city{
+  display: flex;
+  position: relative;
+  font-size: 16px;
+}
+
+.job-history .h-container .h-box .h-content .top-left,
+.job-history .h-container .h-box .h-content .top-right,
+.job-history .h-container .h-box .h-content p {
+  margin: 10px 15px;
+}
+
+.job-history .h-container .h-box .h-content .top-right {
+  display: inline-flex;
+  position: relative;
+  margin: 5px 10px;
+  height: 15%;
+  width: 55%;
+  border: 2px solid #70a1ff;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, .02);
+  transition: background ease-out 1s;
+}
+
+.job-history .h-container .h-box .h-content:hover .top-right {
+  background: #fff;
+  transition: background ease-out 1s;
+}
+
+.job-history .h-container .h-box .h-content .top-right .date {
+  display: flex;
+  position: relative;
+  text-align: center;
+  padding: 8px 10px;
+  font-size: 18px;
+}
+
+.job-history .h-container .h-box .h-content p {
+  display: flex;
+  position: relative;
+  width: 90%;
+  height: 60%;
+}
+
+.job-history .h-container .h-box .h-content:hover {
+  background: #70a1ff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background ease-out 1s;
 }
 
 /* MEDIA */
