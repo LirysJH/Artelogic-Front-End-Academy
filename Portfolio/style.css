@@ -157,6 +157,7 @@ body {
   right: 50px;
   color: #fff;
   text-shadow: #000 0 0 15px;
+  cursor: pointer;
 }
 
 .home-area .home-caption::after {
@@ -336,8 +337,87 @@ body {
 
 /* LATEST WORKS SECTION */
 
-.latest-works {
+.portfolio {
   background: rgba(0, 0, 0, .02);
+}
+
+.portfolio .portfolio__container {
+  display: flex;
+  position: relative;
+  width: 90%;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .portfolio__container .portfolio__content {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.portfolio .portfolio__container .portfolio__content .portfolio__caption {
+  display: flex;
+  position: absolute;
+  top: 0;
+}
+
+.portfolio .portfolio__container .portfolio__content .portfolio__description {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 100%;
+  height: 20%;
+  top: 50px;
+}
+
+.portfolio .portfolio__container .portfolio__content .portfolio__description .desc-left {
+  margin: 10px;
+  width: 50%;
+}
+
+.portfolio .portfolio__container .portfolio__content .portfolio__description .desc-right {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  margin: 10px;
+  width: 50%;
+  justify-content: center;
+}
+
+.portfolio .portfolio__container .portfolio__content .portfolio__description .desc-right p {
+  font-size: 12px;
+  margin: 10px;
+}
+
+.portfolio .portfolio__container .portfolio__content .portfolio__images {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 70%;
+}
+
+.portfolio .portfolio__container .portfolio__content .portfolio__images
+.portfolio-photos {
+  display: grid;
+  position: relative;
+  grid-template-columns: 250px 250px 250px;
+  grid-gap: 10px 20px;
+}
+
+.portfolio .portfolio__container .portfolio__content .portfolio__images
+.portfolio-photos .portfolio-box {
+  width: 100%;
+  height: 70%;
+}
+
+.portfolio .portfolio__container .portfolio__content .portfolio__images
+.portfolio-photos .portfolio-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* JOB HISTORY SECTION */
@@ -367,6 +447,10 @@ body {
   align-items: center;
   cursor: pointer;
   transition: width ease-out .5s;
+}
+
+.job-history .h-container .h-caption h2 {
+  text-align: center;
 }
 
 .job-history .h-container .h-caption:hover {
@@ -673,9 +757,97 @@ body {
   color: #f7b731;
 }
 
-/* CONTACS SECTION */
+/* CONTACTS SECTION */
 
+.contacts {
+  height: 400px;
+  background: #fc5c65;
+  color: #fff;
+}
 
+.contacts .contacts__container {
+  display: flex;
+  position: relative;
+  width: 90%;
+  height: 90%;
+}
+
+.contacts .contacts__container .contacts__content {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contacts .contacts__container .contacts__content .contacts__caption {
+  display: flex;
+  position: absolute;
+  top: 0;
+  border-bottom: 2px solid #fff;
+}
+
+.contacts .contacts__container .contacts__content .contacts__caption h2 {
+  display: flex;
+  position: relative;
+  padding: 10px;
+}
+
+.contacts .contacts__container .contacts__content .contacts__caption::after {
+  content: '';
+  position: absolute;
+  left: 48%;
+  bottom: -6px;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 7px;
+  transition: left ease-out .5s;
+}
+
+.contacts .contacts__container .contacts__content .contacts__numberEmail {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+
+.contacts .contacts__container .contacts__content .contacts__numberEmail p,
+.contacts .contacts__container .contacts__content .contacts__description p {
+  margin: 20px 10px;
+  font-size: 18px;
+}
+
+.contacts .contacts__container .contacts__content .contacts__hire {
+  display: flex;
+  position: absolute;
+  bottom: 40px;
+}
+
+.contacts .contacts__container .contacts__content .contacts__hire input[type=button] {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  background: none;
+  transition: color ease-out .5s,
+              background ease-out .5s;
+}
+
+.contacts .contacts__container .contacts__content .contacts__hire
+input[type=button]:hover {
+  color: #fc5c65;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  background: #fff;
+  transition: color ease-out .5s,
+              background ease-out .5s;
+}
 
 /* MEDIA */
 /* 1200 1024 768 568 320 */
