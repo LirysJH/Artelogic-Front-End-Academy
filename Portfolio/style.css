@@ -338,6 +338,7 @@ body {
 /* LATEST WORKS SECTION */
 
 .portfolio {
+  height: 900px;
   background: rgba(0, 0, 0, .02);
 }
 
@@ -356,12 +357,27 @@ body {
   width: 100%;
   height: 100%;
   justify-content: center;
+  flex-direction: column;
 }
 
 .portfolio .portfolio__container .portfolio__content .portfolio__caption {
   display: flex;
   position: absolute;
   top: 0;
+  height: 8%;
+  border-bottom: 2px solid #ff7f50;
+}
+
+.portfolio .portfolio__container .portfolio__content .portfolio__caption::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 10px;
+  height: 10px;
+  background: #ff7f50;
+  border-radius: 7px;
+  transition: left ease-out .5s;
 }
 
 .portfolio .portfolio__container .portfolio__content .portfolio__description {
@@ -373,30 +389,42 @@ body {
   top: 50px;
 }
 
-.portfolio .portfolio__container .portfolio__content .portfolio__description .desc-left {
+.portfolio .portfolio__container .portfolio__content .portfolio__description
+.desc-left {
   margin: 10px;
   width: 50%;
+  height: 100%;
 }
 
-.portfolio .portfolio__container .portfolio__content .portfolio__description .desc-right {
+.portfolio .portfolio__container .portfolio__content .portfolio__description
+.desc-right {
   display: flex;
   position: relative;
   flex-direction: row;
   margin: 10px;
   width: 50%;
+  height: 100%;
   justify-content: center;
 }
 
-.portfolio .portfolio__container .portfolio__content .portfolio__description .desc-right p {
+.portfolio .portfolio__container .portfolio__content .portfolio__description
+.desc-right p {
   font-size: 12px;
   margin: 10px;
+  cursor: pointer;
+}
+
+.portfolio .portfolio__container .portfolio__content .portfolio__description
+.desc-right p:hover {
+  color: #ff7f50;
 }
 
 .portfolio .portfolio__container .portfolio__content .portfolio__images {
   display: flex;
   position: relative;
   width: 100%;
-  height: 70%;
+  height: 50%;
+  justify-content: center;
 }
 
 .portfolio .portfolio__container .portfolio__content .portfolio__images
@@ -404,13 +432,45 @@ body {
   display: grid;
   position: relative;
   grid-template-columns: 250px 250px 250px;
-  grid-gap: 10px 20px;
+  grid-template-rows: 270px 270px 270px;
+  grid-gap: 10px;
 }
 
 .portfolio .portfolio__container .portfolio__content .portfolio__images
 .portfolio-photos .portfolio-box {
   width: 100%;
-  height: 70%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.portfolio .portfolio__container .portfolio__content .portfolio__images
+.portfolio-photos .portfolio-box .overlay {
+  left: 0;
+  right: 0;
+  top: -275px;
+  display: none;
+  position: relative;
+  width: 250px;
+  height: 270px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(252, 92, 101, .5);
+  border-radius: 10px;
+  flex-direction: column;
+  transition: display ease-out .5s;
+}
+
+.portfolio .portfolio__container .portfolio__content .portfolio__images
+.portfolio-photos .portfolio-box:hover .overlay {
+  display: flex;
+  transition: display ease-out .5s;
+}
+
+.portfolio .portfolio__container .portfolio__content .portfolio__images
+.portfolio-photos .portfolio-box .overlay h4,
+.portfolio .portfolio__container .portfolio__content .portfolio__images
+.portfolio-photos .portfolio-box .overlay p {
+  margin: 10px;
 }
 
 .portfolio .portfolio__container .portfolio__content .portfolio__images
@@ -418,6 +478,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 /* JOB HISTORY SECTION */
