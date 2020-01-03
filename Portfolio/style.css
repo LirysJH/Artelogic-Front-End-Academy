@@ -1188,7 +1188,7 @@ input[type=button]:hover {
     .home-area .profile {
         width: 90%;
         height: 80%;
-        bottom: 50px;
+        bottom: 30px;
     }
 
     .home-area .home-caption {
@@ -1201,20 +1201,29 @@ input[type=button]:hover {
       height: 15px;
     }
 
-    .profile-desc {
-      margin: 10px;
+    .home-area .profile .profile-desc {
+      margin: 5px;
+      font-size: 14px;
     }
 
     .profile .i-block {
-      bottom: 50px;
-      right: 30px;
+      bottom: 10px;
     }
 
     .profile .i-block .icon {
-      margin: 10px;
-      width: 30px;
-      height: 30px;
+      margin: 15px 10px;
+      width: 20px;
+      height: 20px;
     }
+
+    .profile .i-block .icon a .fa {
+      font-size: 18px;
+    }
+
+    .profile .i-block .icon a:hover .fa {
+      font-size: 22px;
+    }
+
 
     /* ABOUT-ME SECTION */
 
@@ -1236,6 +1245,10 @@ input[type=button]:hover {
       height: 100%;
     }
 
+    .about-me .content-about .content-text {
+      font-size: 14px;
+    }
+
     .about-me .content-about .content-caption {
       display: flex;
       position: relative;
@@ -1251,7 +1264,7 @@ input[type=button]:hover {
     /* LATEST WORKS SECTION */
 
     .portfolio {
-      height: 1200px;
+      height: 900px;
     }
 
     .portfolio .portfolio__container {
@@ -1264,9 +1277,15 @@ input[type=button]:hover {
       height: 100%;
     }
 
-    .portfolio .portfolio__container .portfolio__content .portfolio__caption {
+    .portfolio .portfolio__container .portfolio__content
+    .portfolio__caption {
       top: 20px;
       height: 50px;
+    }
+
+    .portfolio .portfolio__container .portfolio__content
+    .portfolio__caption .portfolio__description {
+      height: 10%;
     }
 
     .portfolio .portfolio__container .portfolio__content
@@ -1276,23 +1295,31 @@ input[type=button]:hover {
       margin: 0 30px;
     }
 
-    .portfolio .portfolio__container .portfolio__content .portfolio__images
-    .portfolio-photos {
-      grid-template-columns: 240px 240px;
-      grid-template-rows: 200px 200px;
+    .portfolio .portfolio__container .portfolio__content
+    .portfolio__images .portfolio-photos {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+    }
+
+    .portfolio .portfolio__container .portfolio__content
+    .portfolio__images .portfolio-photos .portfolio-box {
+      width: 350px;
+      height: 100px;
+      margin: 15px 10px;
     }
 
     .portfolio .portfolio__container .portfolio__content .portfolio__images
     .portfolio-photos .portfolio-box .overlay {
-      top: -203px;
-      width: 240px;
-      height: 200px;
+      top: -105px;
+      width: 350px;
+      height: 100px;
     }
 
     /* JOB HISTORY SECTION */
 
     .job-history {
-      height: 1100px;
+      height: 1050px;
     }
 
     .job-history .h-container {
@@ -1300,18 +1327,47 @@ input[type=button]:hover {
       height: 90%;
     }
 
+    .job-history .h-container .h-caption {
+      margin: 5px 0 10px;
+    }
+
     .job-history .h-container .h-box {
       width: 100%;
-      height: 80%;
-      margin: 0 60px;
+      height: 90%;
+      top: 50px;
+      left: 25px;
+      right: 25px;
       grid-template-columns: 1fr;
       grid-template-rows: 240px;
+    }
+
+    .job-history .h-container .h-box .h-content .top-right .date {
+      font-size: 14px;
     }
 
     /* SEVICE OFFERS SECTION */
 
     .service-offers {
       height: 1360px;
+    }
+
+    /* FEEDBACK SECTION */
+
+    .feedback {
+      height: 300px;
+    }
+
+    .feedback .feedback-container .slider {
+      width: 400px;
+      height: 70%;
+    }
+
+    .feedback .feedback-container .slider .slide {
+      width: 400px;
+    }
+
+    .feedback .feedback-container .slider .slide .slide-content {
+        width: 400px;
     }
 
 }
