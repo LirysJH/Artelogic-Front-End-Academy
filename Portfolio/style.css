@@ -1002,6 +1002,10 @@ input[type=button]:hover {
   /* MAIN */
   /*HOME SECTION*/
 
+  .home-area {
+    height: 500px;
+  }
+
   .home-area .profile {
       width: 90%;
       height: 80%;
@@ -1018,8 +1022,13 @@ input[type=button]:hover {
     height: 15px;
   }
 
-  .profile-desc {
+  .profile .profile-desc {
+    height: 80%;
     margin: 10px;
+  }
+
+  .profile .profile-desc p {
+    font-size: 12px;
   }
 
   .profile .i-block {
@@ -1171,6 +1180,10 @@ input[type=button]:hover {
 
     /* MAIN */
     /*HOME SECTION*/
+
+    .home-area {
+      height: 400px;
+    }
 
     .home-area .profile {
         width: 90%;
