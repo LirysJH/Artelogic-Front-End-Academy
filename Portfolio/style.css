@@ -785,7 +785,7 @@ body {
   position: relative;
   width: 600px;
   height: 50%;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
@@ -799,6 +799,11 @@ body {
   height: 100%;
   scroll-behavior: smooth;
   scroll-snap-align: start;
+
+  animation-name: auto-slider;
+  animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 .feedback .feedback-container .slider .slide .slide-content {
@@ -908,6 +913,23 @@ input[type=button]:hover {
   background: #fff;
   transition: color ease-out .5s,
               background ease-out .5s;
+}
+
+/* SLIDER ANIMATION */
+
+@keyframes auto-slider {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: -600px;
+  }
+  50% {
+    left: -1200px;
+  }
+  100% {
+    left: -1800px;
+  }
 }
 
 /* MEDIA */
