@@ -20,16 +20,7 @@ body {
 
 /* ADD NOTES SECTION*/
 
-.section .add-note {
-  width: 90%;
-  height: 400px;
-  background: rgba(0, 0, 0, .2);
-  border-radius: 20px;
-}
-
-/* EXAMPLE */
-
-.section .example {
+.add-note {
   display: flex;
   position: relative;
   justify-content: center;
@@ -39,14 +30,134 @@ body {
   border-radius: 20px;
 }
 
-.section .example .example__container {
+.add-note .add__container {
+  display: flex;
+  position: relative;
+  width: 70%;
+  height: 70%;
+  margin: auto;
+}
+
+.add-note .add__container .add__box {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, .3);
+  border-radius: 20px;
+}
+
+.add-note .add__container .add__box .add_caption {
+  display: flex;
+  position: relative;
+  width: 90%;
+  height: 40px;
+  margin: 20px;
+}
+
+.add-note .add__container .add__box .add_text {
+  display: flex;
+  position: relative;
+  width: 90%;
+  height: 110px;
+  margin: 20px;
+}
+
+.add-note .add__container .add__box .textarea-size {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  color: rgba(255, 255, 255, .4);
+}
+
+#label, #note-text {
+  display: flex;
+  position: relative;
+  background: none;
+  outline: none;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 100%;
+  border-radius: 4px;
+}
+
+#note-text {
+  resize: none;
+  font-size: 16px;
+}
+
+#label {
+  font-size: 18px;
+
+}
+
+#label::placeholder, #note-text::placeholder {
+  color: rgba(255, 255, 255, .4);
+}
+
+.add-note .add__container .add_imgBox {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  bottom: 0;
+  right: 0;
+  margin: 8px 15px;
+  width: 200px;
+  height: 40px;
+  /*border: 2px solid #fff;*/
+}
+
+.add-note .add__container .add_imgBox .fa {
+  font-size: 25px;
+  margin: 5px 10px;
+}
+
+.add-note .add__container .add_imgBox .fa:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+#submit-btn {
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  justify-content: center;
+  width: 80px;
+  height: 30px;
+  text-decoration: none;
+  background: #26de81;
+  border: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#submit-btn:hover {
+  background: #20bf6b;
+}
+
+/* EXAMPLE */
+
+.example {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 90%;
+  height: 350px;
+  background: rgba(0, 0, 0, .2);
+  border-radius: 20px;
+}
+
+.example .example__container {
   display: block;
   position: relative;
   width: 70%;
   height: 70%;
 }
 
-.section .example .example__container .example__caption {
+.example .example__container .example__caption {
   display: flex;
   position: relative;
   justify-content: center;
@@ -54,17 +165,17 @@ body {
   color: #fff;
 }
 
-.section .example .example__container .example__box {
+.example .example__container .example__box {
   display: block;
   position: relative;
   width: 100%;
   height: 100%;
-  margin: 40px 0;
+  margin: 20px 0 40px;
   background: rgba(255, 255, 255, .3);
   border-radius: 20px;
 }
 
-.section .example .example__container .example__box .example__label {
+.example .example__container .example__box .example__label {
   display: flex;
   position: relative;
   justify-content: center;
@@ -76,16 +187,16 @@ body {
   width: 350px;
 }
 
-.section .example .example__container .example__box .example__text {
+.example .example__container .example__box .example__text {
   display: flex;
   position: relative;
   justify-content: center;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   margin: 40px 20px;
 }
 
-.section .example .example__container .example__box .example__img {
+.example .example__container .example__box .example__img {
   display: flex;
   position: absolute;
   width: 30px;
@@ -94,14 +205,14 @@ body {
   right: 20px;
 }
 
-.section .example .example__container .example__box .example__img .pin-img {
+.example .example__container .example__box .example__img .pin-img {
   height: 100%;
   width: 100%;
 }
 
 /* NOTES CONTAINER */
 
-.section .note__container {
+.note__container {
   width: 90%;
   background: rgba(0, 0, 0, .2);
   border-radius: 20px;
