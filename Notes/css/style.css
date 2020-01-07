@@ -111,11 +111,14 @@ body {
 .add-note .add__container .add_imgBox .fa {
   font-size: 25px;
   margin: 5px 10px;
+  color: #000;
+  transition: color ease-out .5s;
 }
 
 .add-note .add__container .add_imgBox .fa:hover {
   color: #fff;
   cursor: pointer;
+  transition: color ease-out .5s;
 }
 
 #submit-btn {
@@ -132,6 +135,7 @@ body {
   border-radius: 10px;
   cursor: pointer;
   text-transform: uppercase;
+  outline: none;
 }
 
 #submit-btn:hover {
@@ -185,6 +189,7 @@ body {
   left: 20px;
   /*border: 1px solid black;*/
   width: 350px;
+  height: 45px;
 }
 
 .example .example__container .example__box .example__text {
@@ -193,7 +198,16 @@ body {
   justify-content: center;
   font-size: 16px;
   color: #fff;
-  margin: 40px 20px;
+  margin: 40px auto;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  width: 90%;
+  height: 130px;
+}
+
+
+.example .example__container .example__box .example__text p {
+  margin: auto 15px;
 }
 
 .example .example__container .example__box .example__img {
@@ -212,8 +226,74 @@ body {
 
 /* NOTES CONTAINER */
 
-.note__container {
+.note {
+  display: flex;
+  position: relative;
+  justify-content: center;
   width: 90%;
   background: rgba(0, 0, 0, .2);
   border-radius: 20px;
+}
+
+.note .note__container {
+  display: block;
+  position: relative;
+  justify-content: center;
+  width: 70%;
+  height: 70%;
+  border-radius: 20px;
+}
+
+.note .note__container .note__box {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 250px;
+  margin: 20px 0 40px;
+  background: rgba(255, 255, 255, .3);
+  border-radius: 20px;
+}
+
+.note .note__container .note__box .note__label {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  font-size: 36px;
+  color: #fff;
+  top: 20px;
+  left: 20px;
+  /*border: 1px solid black;*/
+  width: 350px;
+  height: 45px;
+}
+
+.note .note__container .note__box .note__text {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  font-size: 16px;
+  color: #fff;
+  margin: 40px auto;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  width: 90%;
+  height: 130px;
+}
+
+.note .note__container .note__box  .note__text p {
+  margin: auto 15px;
+}
+
+.note .note__container .note__box .note__img {
+  display: flex;
+  position: absolute;
+  width: 30px;
+  height: 40px;
+  top: 10px;
+  right: 20px;
+}
+
+.note .note__container .note__box .note__img .pin-img {
+  height: 100%;
+  width: 100%;
 }

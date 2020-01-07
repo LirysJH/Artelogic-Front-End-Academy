@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="js/script.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Notes</title>
   </head>
@@ -13,7 +12,7 @@
         <div class="add__container">
           <div class="add__box">
             <div class="add_caption">
-              <input id="label" type="text" name="nlabel" placeholder="Enter your label here">
+              <input id="label" type="text" name="nlabel" placeholder="Enter your label here"> <!--  onchange="getInfo()" -->
             </div>
             <div class="add_text">
               <textarea id="note-text" name="ntext" placeholder="Enter your text here..." maxlength="300"></textarea>
@@ -57,9 +56,14 @@
       </div>
     </section>
     <section class="section">
-      <div class="note__container">
+      <div class="note">
+        <div class="note__container" id="notes">
 
+        </div>
       </div>
     </section>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
   </body>
 </html>
