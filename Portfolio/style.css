@@ -283,7 +283,7 @@ body {
   transition: transform ease-out 1s;
 }
 
-.about-me .img-box img{
+.about-me .img-box img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -338,7 +338,7 @@ body {
 /* LATEST WORKS SECTION */
 
 .portfolio {
-  height: 900px;
+  height: 800px;
   background: rgba(0, 0, 0, .02);
 }
 
@@ -364,7 +364,7 @@ body {
   display: flex;
   position: absolute;
   top: 0;
-  height: 8%;
+  height: 40px;
   border-bottom: 2px solid #ff7f50;
 }
 
@@ -423,7 +423,7 @@ body {
   display: flex;
   position: relative;
   width: 100%;
-  height: 50%;
+  height: 70%;
   justify-content: center;
 }
 
@@ -498,7 +498,7 @@ body {
 .job-history .h-container .h-caption {
   display: flex;
   position: absolute;
-  top: 0;
+  top: 10px;
   width: 10%;
   height: 10%;
   border-bottom: 2px solid #ff7f50;
@@ -556,7 +556,7 @@ body {
   position: relative;
 }
 
-.job-history .h-container .h-box .h-content .top-left .city{
+.job-history .h-container .h-box .h-content .top-left .city {
   display: flex;
   position: relative;
   font-size: 16px;
@@ -633,10 +633,10 @@ body {
 .service-offers .service-container .service-box .service-caption {
   display: flex;
   position: relative;
-  height: 8%;
-  width: 15%;
+  height: 40px;
+  width: 200px;
   border-bottom: 2px solid #ff7f50;
-  margin: 10px 10px 60px;
+  margin: 0 10px 20px;
   cursor: pointer;
 }
 
@@ -668,7 +668,7 @@ body {
 .service-offers .service-container .service-box .service-content {
   display: flex;
   position: relative;
-  height: 70%;
+  height: 95%;
 }
 
 .service-offers .service-container .service-box .service-content
@@ -767,7 +767,7 @@ body {
 /* FEEDBACK SECTION */
 
 .feedback {
-  height: 400px;
+  height: 300px;
 }
 
 .feedback .feedback-container {
@@ -784,7 +784,7 @@ body {
   display: flex;
   position: relative;
   width: 600px;
-  height: 50%;
+  height: 80%;
   overflow-x: hidden;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
@@ -888,7 +888,7 @@ body {
 .contacts .contacts__container .contacts__content .contacts__hire {
   display: flex;
   position: absolute;
-  bottom: 40px;
+  bottom: 10px;
 }
 
 .contacts .contacts__container .contacts__content .contacts__hire input[type=button] {
@@ -943,19 +943,19 @@ input[type=button]:hover {
   }
 
   .job-history .h-container {
-    width: 90%;
+    width: 100%;
   }
 
   .job-history .h-container .h-box {
-    width: 80%;
-    grid-template-columns: 300px 300px;
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 330px 330px;
   }
 
   /* SEVICE OFFERS SECTION */
 
   .service-offers {
-    height: 760px;
+    height: 680px;
   }
 
 }
@@ -1002,19 +1002,19 @@ input[type=button]:hover {
   }
 
   .job-history .h-container {
-    width: 90%;
+    width: 100%;
   }
 
   .job-history .h-container .h-box {
-    width: 70%;
-    grid-template-columns: 300px 300px;
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 330px 330px;
   }
 
   /* SEVICE OFFERS SECTION */
 
   .service-offers {
-    height: 760px;
+    height: 680px;
   }
 
 }
@@ -1099,7 +1099,7 @@ input[type=button]:hover {
   /* LATEST WORKS SECTION */
 
   .portfolio {
-    height: 1200px;
+    height: 1100px;
   }
 
   .portfolio .portfolio__container {
@@ -1140,18 +1140,17 @@ input[type=button]:hover {
   /* JOB HISTORY SECTION */
 
   .job-history {
-    height: 1100px;
+    height: 1200px;
   }
 
   .job-history .h-container {
-    width: 90%;
-    height: 90%;
+    width: 100%;
   }
 
   .job-history .h-container .h-box {
-    width: 100%;
-    height: 80%;
-    margin: 0 60px;
+    width: 90%;
+    height: 85%;
+    margin: 120px 60px 0;
     grid-template-columns: 1fr;
     grid-template-rows: 240px;
   }
@@ -1159,7 +1158,7 @@ input[type=button]:hover {
   /* SEVICE OFFERS SECTION */
 
   .service-offers {
-    height: 1360px;
+    height: 1150px;
   }
 
 }
@@ -1370,7 +1369,7 @@ input[type=button]:hover {
     /* SEVICE OFFERS SECTION */
 
     .service-offers {
-      height: 1360px;
+      height: 1200px;
     }
 
     /* FEEDBACK SECTION */
@@ -1606,7 +1605,7 @@ input[type=button]:hover {
   /* JOB HISTORY SECTION */
 
   .job-history {
-    height: 1100px;
+    height: 1050px;
   }
 
   .job-history .h-container {
@@ -1645,7 +1644,7 @@ input[type=button]:hover {
   /* SEVICE OFFERS SECTION */
 
   .service-offers {
-    height: 1500px;
+    height: 1350px;
   }
 
   .service-offers .service-container .service-box .service-caption {
