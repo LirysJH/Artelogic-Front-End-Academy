@@ -12,11 +12,18 @@
         <div class="add__container">
           <div class="add__box">
             <div class="add_caption">
-              <input id="label" type="text" name="nlabel" placeholder="Enter your label here"> <!--  onchange="getInfo()" -->
+              <input id="label" type="text" name="nlabel" placeholder="Enter your label here" /> <!--  onchange="getInfo()" -->
             </div>
             <div class="add_text">
               <textarea id="note-text" name="ntext" placeholder="Enter your text here..." maxlength="300"></textarea>
             </div>
+            <select name="labels" id="label-select">
+              <option value="">-- Please choose an option --</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="js">JavaScript</option>
+              <option value="ts">TypeScript</option>
+            </select>
             <p class="textarea-size">Maximum - 300 symbols</p>
           </div>
           <div class="add_imgBox">
@@ -30,34 +37,27 @@
       </div>
     </section>
     <section class="section">
-      <div class="example">
-        <div class="example__container">
-          <h2 class="example__caption">
-            This is an example of how your note will look like
-          </h2>
-          <div class="example__box">
-            <h4 class="example__label">Label</h4>
-            <div class="example__img">
+      <div class="note">
+        <div class="note__container" id="notes">
+          <div class="note__box">
+            <h4 class="note__label">Example note</h4>
+            <div class="note__img">
               <img class="pin-img" src="images/pin.png" alt="" />
             </div>
-            <div class="example__text">
+            <div class="note__text">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                 in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                nulla pariatur.
               </p>
             </div>
+            <div class="label-box">
+              <p>#label</p>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="note">
-        <div class="note__container" id="notes">
 
         </div>
       </div>

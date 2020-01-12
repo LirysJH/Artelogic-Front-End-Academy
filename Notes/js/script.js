@@ -15,23 +15,36 @@
       sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
   </div>
+  <div class="label-box">
+    <p>#label</p>
+  </div>
 </div>
 */
 
+const info = {
+  caption: '',
+  text: '',
+  label: '',
+};
+
 const button = document.getElementById('submit-btn');
-button.addEventListener("click", function()
+button.addEventListener("click", () =>
+{
+  info.caption = document.getElementById('label').value;
+  info.text = document.getElementById('note-text').value;
+  info.label = document.getElementById("label-select").value;
+
+  const content = '<div class="note__box"><h4 class="note__label">' + info.caption +
+  '</h4><div class="note__img"><img class="pin-img" src="images/pin.png" alt="" /></div>'
+  + '<div class="note__text"><p>' + info.text + '</p></div><div class="label-box"><p>'+
+  '#' + info.label.toLowerCase() +'</p></div></div>';
+
+  if ( info.label === '' || info.text === '' || info.label === '' )
   {
-    let info = {
-      label: '',
-      text: ''
-    };
-
-    info.label = document.getElementById('label').value;
-    info.text = document.getElementById('note-text').value;
-
-    let content = '<div class="note__box"><h4 class="note__label">' + info.label +
-    '</h4><div class="note__img"><img class="pin-img" src="images/pin.png" alt="" /></div>'
-    + '<div class="note__text"><p>' + info.text + '</p></div></div>';
-
+     alert('Looks like you missed to select some info!');
+  }
+  else
+  {
     document.getElementById("notes").innerHTML += content;
-  });
+  }
+});
