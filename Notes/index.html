@@ -9,12 +9,12 @@
   <body>
     <section class="section">
       <div class="add-note">
-        <div class="add__container">
-          <div class="add__box">
-            <div class="add_caption">
-              <input id="label" type="text" name="nlabel" placeholder="Enter your label here" /> <!--  onchange="getInfo()" -->
+        <div class="add-note__container">
+          <div class="add-note__box">
+            <div class="add-note_caption">
+              <input id="label" type="text" name="nlabel" placeholder="Enter your label here" />
             </div>
-            <div class="add_text">
+            <div class="add-note_text">
               <textarea id="note-text" name="ntext" placeholder="Enter your text here..." maxlength="300"></textarea>
             </div>
             <select name="labels" id="label-select">
@@ -26,14 +26,8 @@
             </select>
             <p class="textarea-size">Maximum - 300 symbols</p>
           </div>
-          <div class="add_imgBox">
-            <i class="fa fa-paperclip"></i>
-            <i class="fa fa-image"></i>
-            <i class="fa fa-folder-open"></i>
-            <i class="fa fa-ellipsis-v"></i>
-          </div>
+          <input id="submit-btn" type="button" value="Add a note">
         </div>
-        <input id="submit-btn" type="button" value="Submit">
       </div>
     </section>
     <section class="section">

@@ -30,26 +30,29 @@ body {
   border-radius: 20px;
 }
 
-.add-note .add__container {
+.add-note .add-note__container {
   display: flex;
   position: relative;
+  align-items:center;
   width: 70%;
-  height: 70%;
-  margin: auto;
+  height: 90%;
+  margin: 20px auto;
+  flex-direction: column;
 }
 
-.add-note .add__container .add__box {
+.add-note .add-note__container .add-note__box {
   display: flex;
   position: relative;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 80%;
   background: rgba(255, 255, 255, .3);
   border-radius: 20px;
+  margin: 20px;
 }
 
-.add-note .add__container .add__box .add_caption {
+.add-note .add-note__container .add-note__box .add-note_caption {
   display: flex;
   position: relative;
   width: 90%;
@@ -57,7 +60,7 @@ body {
   margin: 20px auto;
 }
 
-.add-note .add__container .add__box .add_text {
+.add-note .add-note__container .add-note__box .add-note_text {
   display: flex;
   position: relative;
   width: 90%;
@@ -65,15 +68,16 @@ body {
   margin: 10px auto;
 }
 
-.add-note .add__container .add__box .textarea-size {
+.add-note .add-note__container .add-note__box .textarea-size {
   display: flex;
   position: absolute;
   bottom: 20px;
   left: 10px;
   color: rgba(255, 255, 255, .4);
+  cursor: default;
 }
 
-.add-note .add__container .add__box #label-select {
+.add-note .add-note__container .add-note__box #label-select {
   position: relative;
   width: 90%;
 }
@@ -93,10 +97,12 @@ body {
 #note-text {
   resize: none;
   font-size: 16px;
+  padding: 8px;
 }
 
 #label {
   font-size: 18px;
+  padding: 8px;
 }
 
 #label::placeholder,
@@ -104,38 +110,11 @@ body {
   color: rgba(255, 255, 255, .4);
 }
 
-.add-note .add__container .add_imgBox {
-  display: flex;
-  position: absolute;
-  flex-direction: row;
-  bottom: 0;
-  right: 0;
-  margin: 8px 15px;
-  width: 200px;
-  height: 40px;
-  /*border: 2px solid #fff;*/
-}
-
-.add-note .add__container .add_imgBox .fa {
-  font-size: 25px;
-  margin: 5px 10px;
-  color: #000;
-  transition: color ease-out .5s;
-}
-
-.add-note .add__container .add_imgBox .fa:hover {
-  color: #fff;
-  cursor: pointer;
-  transition: color ease-out .5s;
-}
-
 #submit-btn {
   display: flex;
-  position: absolute;
-  bottom: 30px;
-  right: 20px;
+  position: relative;
   justify-content: center;
-  width: 80px;
+  width: 100px;
   height: 30px;
   text-decoration: none;
   background: #26de81;
@@ -148,6 +127,10 @@ body {
 
 #submit-btn:hover {
   background: #20bf6b;
+}
+
+#submit-btn:active {
+  font-size: 12px;
 }
 
 /* NOTES CONTAINER */
