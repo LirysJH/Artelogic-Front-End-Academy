@@ -10,6 +10,7 @@
   position: sticky;
   top: 0;
   z-index: 5;
+  background: rgba(255, 255, 255, 0.85);
   -webkit-box-pack: center;
   justify-content: center;
   height: 110px;
@@ -25,6 +26,7 @@
     width: 1140px;
     height: 100%; }
     .menu__nav .divider {
+      display: -webkit-box;
       display: flex;
       position: absolute;
       color: rgba(0, 0, 0, 0.03);
@@ -117,5 +119,69 @@
             .menu__nav .menu__bottom-nav .menu__bottom-nav-right .menu-list .menu-item a:hover,
             .menu__nav .menu__bottom-nav .menu__bottom-nav-right .menu-list .menu-item-burger a:hover {
               border-top: 2px solid #20bf6b; }
+
+.slider {
+  display: -webkit-box;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 790px; }
+  .slider__slide {
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto; }
+    .slider__slide-text {
+      display: -webkit-box;
+      display: flex;
+      position: relative;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-box-align: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 100%; }
+      .slider__slide-text h2 {
+        text-align: center;
+        font-size: 36px; }
+      .slider__slide-text p {
+        margin: 15px 0 36px;
+        text-align: center;
+        font-size: 21px; }
+      .slider__slide-text .explore {
+        position: relative;
+        width: 140px;
+        height: 45px;
+        border: none;
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.25);
+        border-radius: 40px;
+        padding: auto;
+        color: #2ecc71;
+        background: none;
+        cursor: pointer; }
+
+.customers {
+  display: -webkit-box;
+  display: flex;
+  position: relative;
+  height: 390px;
+  width: 1140px;
+  margin: 0 auto; }
+  .customers__divider-before, .customers__divider-after {
+    display: -webkit-box;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.03);
+    margin: 0 auto; }
+  .customers__divider-before {
+    top: 0; }
+  .customers__divider-after {
+    bottom: 0; }
+
+.services {
+  height: 100px; }
 
 /*# sourceMappingURL=main.css.map */
