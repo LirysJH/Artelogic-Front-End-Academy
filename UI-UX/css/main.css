@@ -222,7 +222,7 @@
   display: -webkit-box;
   display: flex;
   position: relative;
-  height: 1120px;
+  height: 760px;
   background: rgba(0, 0, 0, 0.03);
   z-index: 0; }
   .services__skewed {
@@ -240,7 +240,7 @@
   display: flex;
   position: relative;
   background: rgba(0, 0, 0, 0.03);
-  height: 930px;
+  height: 540px;
   z-index: 5; }
   .careers__skewed {
     position: absolute;
