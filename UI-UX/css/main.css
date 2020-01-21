@@ -39,7 +39,8 @@
       width: 100%;
       height: 48px;
       -webkit-box-align: center;
-      align-items: center; }
+      align-items: center;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.03); }
       .menu__nav .menu__top-nav .menu__top-nav-icons {
         display: -webkit-box;
         display: flex;
@@ -125,7 +126,9 @@
   display: flex;
   position: relative;
   width: 100%;
-  height: 790px; }
+  height: 780px;
+  background: #fff url(../images/bg.jpg) no-repeat;
+  overflow: hidden; }
   .slider__slide {
     width: 1140px;
     height: 100%;
@@ -159,27 +162,60 @@
         border-radius: 40px;
         padding: auto;
         color: #2ecc71;
-        background: none;
+        background: #fff;
         cursor: pointer; }
 
 .customers {
   display: -webkit-box;
   display: flex;
   position: relative;
-  height: 390px;
-  width: 1140px;
-  margin: 0 auto; }
-  .customers__divider-before, .customers__divider-after {
+  height: 160px;
+  width: 100%;
+  margin: 0 auto;
+  border-top: 2px solid rgba(0, 0, 0, 0.03);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.03); }
+  .customers__content {
     display: -webkit-box;
     display: flex;
-    position: absolute;
-    width: 100%;
-    color: rgba(0, 0, 0, 0.03);
+    position: relative;
+    width: 1140px;
+    height: 100%;
     margin: 0 auto; }
-  .customers__divider-before {
-    top: 0; }
-  .customers__divider-after {
-    bottom: 0; }
+    .customers__content-col-left {
+      display: -webkit-box;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      height: 100%;
+      width: 360px;
+      padding: 42px 0; }
+      .customers__content-col-left h2 {
+        margin: 0 0 24px; }
+      .customers__content-col-left p {
+        font-size: 14px; }
+    .customers__content-col-right {
+      display: -webkit-box;
+      display: flex;
+      position: relative;
+      height: 100%;
+      width: 685px; }
+      .customers__content-col-right .cell-vintage,
+      .customers__content-col-right .cell-woody,
+      .customers__content-col-right .cell-lumber,
+      .customers__content-col-right .cell-retro {
+        display: -webkit-box;
+        display: flex;
+        position: relative;
+        height: 100%;
+        width: 196px;
+        object-fit: cover; }
+        .customers__content-col-right .cell-vintage .partner-img,
+        .customers__content-col-right .cell-woody .partner-img,
+        .customers__content-col-right .cell-lumber .partner-img,
+        .customers__content-col-right .cell-retro .partner-img {
+          margin: auto;
+          height: 50%;
+          width: 80%; }
 
 .services {
   height: 100px; }
