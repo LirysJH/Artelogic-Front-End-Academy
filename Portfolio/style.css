@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #fff;
   box-sizing: border-box;
@@ -75,6 +79,21 @@ body {
   display: inline-block;
   font-size: 18px;
   margin: 0 15px 0;
+}
+
+.menu .sticky-menu .navigation .nav-item.burger-menu {
+  display: none;
+}
+
+.menu .sticky-menu .navigation .nav-item.burger-menu .burger {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+}
+
+.menu .sticky-menu .navigation .nav-item.burger-menu .burger:hover {
+  cursor: pointer;
+  color: #ff7f50;
 }
 
 .menu .sticky-menu .navigation .nav-item a {
@@ -1020,6 +1039,15 @@ input[type=button]:hover {
 }
 
 @media (min-width: 571px) and (max-width: 768px) {
+  /* MENU */
+
+  .menu .sticky-menu .navigation .nav-item {
+    display: none;
+  }
+
+  .menu .sticky-menu .navigation .nav-item.burger-menu {
+    display: flex;
+  }
 
   /* MAIN */
   /*HOME SECTION*/
@@ -1164,12 +1192,15 @@ input[type=button]:hover {
 }
 
 @media (min-width: 501px) and (max-width: 570px) {
-
   /* HEADER */
   /* MENU */
 
   .menu .sticky-menu .navigation .nav-item {
-    font-size: 12px;
+    display: none;
+  }
+
+  .menu .sticky-menu .navigation .nav-item.burger-menu {
+    display: flex;
   }
 
   .menu .sticky-menu .navigation .nav-item.with-arrow
@@ -1399,8 +1430,11 @@ input[type=button]:hover {
   /* MENU */
 
   .menu .sticky-menu .navigation .nav-item {
-    font-size: 9px;
-    margin: 0 5px 0;
+    display: none;
+  }
+
+  .menu .sticky-menu .navigation .nav-item.burger-menu {
+    display: flex;
   }
 
   .menu .sticky-menu .navigation .nav-item.with-arrow
