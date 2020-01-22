@@ -96,6 +96,63 @@ body {
   color: #ff7f50;
 }
 
+.wrapper {
+  position: relative;
+  width: 40px;
+  color: white;
+  height: 40px;
+}
+
+#check-menu {
+  display: none;
+}
+
+label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.burger-line {
+  position: absolute;
+  width: 35px;
+  height: 2px;
+  background-color: #fff;
+  transition: .5s all;
+}
+
+.first-line {
+  top: 10px;
+}
+
+.second-line,
+.third-line {
+  top: 20px;
+}
+
+.fourth-line {
+  top: 30px;
+}
+
+#check-menu:checked ~ .first-line {
+  display: none;
+}
+
+#check-menu:checked ~ .second-line {
+  transform: rotate(45deg);
+}
+
+#check-menu:checked ~ .third-line {
+  transform: rotate(-45deg);
+}
+
+#check-menu:checked ~ .fourth-line {
+  display: none;
+}
+
 .menu .sticky-menu .navigation .nav-item a {
   text-decoration: none;
   outline: none;
