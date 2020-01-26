@@ -15,6 +15,10 @@ body {
   font-family: sans-serif;
 }
 
+p {
+  color: gray;
+}
+
 /* HEADER */
 
 .menu {
@@ -57,7 +61,7 @@ body {
       height: 48px;
       -webkit-box-align: center;
       align-items: center;
-      border-bottom: 2px solid rgba(0, 0, 0, .2);
+      border-bottom: 1px solid rgba(0, 0, 0, .2);
 
       .menu__top-nav-icons {
         display: -webkit-box;
@@ -173,15 +177,14 @@ body {
   position: relative;
   width: 100%;
   height: 780px;
-  /*background: #fff url(../images/snowy-bg.jpg) no-repeat;*/
   z-index: 5;
 
-  img {
+  .img-bg {
     position: absolute;
     z-index: 2;
     width: 100%;
     height: 780px;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   .slider {
@@ -316,6 +319,7 @@ body {
 
       h2 {
         margin: 0 0 24px;
+        font-size: 32px;
       }
 
       p {
@@ -496,8 +500,7 @@ body {
     }
 
     p {
-      font-size: 12px;
-      color: gray;
+      /*font-size: 12px;*/
       margin-top: 40px;
     }
 
@@ -585,3 +588,187 @@ body {
 
   }
 }*/
+
+/* CONTACT US section */
+
+.contact-us {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  position: relative;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 695px;
+
+  .img-bg {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__caption {
+    position: relative;
+    top: 0;
+
+    h2,
+    p {
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__form {
+    display: -webkit-box;
+    display: flex;
+    position: absolute;
+    width: 750px;
+    height: 740px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 -1px 5px 5px rgba(0, 0, 0, .2);
+    z-index: 1;
+    top: 25%;
+    left: 30%;
+
+    &__content {
+      display: -webkit-box;
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      -webkit-box-pack: center;
+      justify-content: center;
+
+      .wrapper {
+        display: -webkit-box;
+        display: flex;
+        position: relative;
+        height: 100%;
+        width: 615px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+
+        .label {
+          position: absolute;
+          text-transform: uppercase;
+        }
+
+        .email-l {
+          top: 75px;
+        }
+
+        .name-l,
+        .surname-l {
+          top: -35px;
+        }
+
+        .surname-l {
+          left: 315px;
+        }
+
+        .msg-l {
+          top: 340px;
+        }
+
+        .email-input,
+        .input-row,
+        .message-input {
+          display: block;
+          position: relative;
+          width: 100%;
+          border: none;
+        }
+
+        .email-input,
+        .input-row {
+          height: 68px;
+        }
+
+        .email-input,
+        .message-input {
+          background: rgba(0, 0, 0, .1);
+          border-radius: 5px;
+          padding: 10px;
+        }
+
+        .email-input {
+          margin: 112px 0 65px;
+        }
+
+        .input-row {
+          margin-bottom: 65px;
+
+          .name-input,
+          .surname-input {
+            width: 300px;
+            height: 100%;
+            background: rgba(0, 0, 0, .1);
+            border-radius: 5px;
+            border: none;
+            padding: 10px;
+          }
+
+          .surname-input {
+            margin-left: 10px;
+            right: 0;
+          }
+        }
+
+        .message-input {
+          width: 100%;
+          height: 180px;
+        }
+
+        .submit-btn {
+          width: 140px;
+          height: 45px;
+          margin: 60px 0 90px;
+          font-size: 14px;
+          color: green;
+          background: none;
+          border: none;
+          border-radius: 20px;
+          box-shadow: 0 -1px 5px 5px rgba(0, 0, 0, .2);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+/* FOOTER */
+
+footer {
+  display: -webkit-box;
+  display: flex;
+  position: relative;
+  height: 780px;
+
+  .img-bg {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .footer__content {
+    display: -webkit-box;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 405px;
+    top: 380px;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    z-index: 1;
+  }
+}
