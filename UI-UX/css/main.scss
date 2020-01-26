@@ -12,6 +12,7 @@ html {
 
 body {
   width: 1745px;
+  font-family: sans-serif;
 }
 
 /* HEADER */
@@ -56,7 +57,7 @@ body {
       height: 48px;
       -webkit-box-align: center;
       align-items: center;
-      border-bottom: 2px solid $color-grey;
+      border-bottom: 2px solid rgba(0, 0, 0, .2);
 
       .menu__top-nav-icons {
         display: -webkit-box;
@@ -356,29 +357,7 @@ body {
   display: -webkit-box;
   display: flex;
   position: relative;
-  height: 955px;
-  z-index: 0;
-
-  &__skewed-block {
-    display: -webkit-box;
-    display: flex;
-    position: absolute;
-    background: $color-grey;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-
-    .skewed-overlay {
-      position: absolute;
-      background: #fff;
-      width: 100%;
-      height: 100%;
-      bottom: 0;
-      left: 0;
-      transform: skewY(-10deg);
-      transform-origin: left;
-    }
-  }
+  height: 760px;
 
   &__content {
     display: -webkit-box;
@@ -393,9 +372,9 @@ body {
       display: flex;
       position: absolute;
       height: 635px;
-      width: 410px; //720
+      width: 720px;
       top: 110px;
-      left: 0;
+      left: -250px;
     }
 
     &-col-right {
@@ -405,7 +384,7 @@ body {
       height: 450px;
       width: 750px;
       top: 170px;
-      left: 805px; //695
+      left: 695px;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       flex-direction: column;
@@ -444,9 +423,11 @@ body {
           height: 75px;
           width: 345px;
 
-          .fa {
+          img {
+            display: block;
             position: relative;
-            font-size: 40px;
+            height: 40px;
+            width: 40px;
           }
 
           .content-box {
@@ -475,13 +456,6 @@ body {
 
         .col-right{
           margin-left: 40px;
-
-          img {
-            display: block;
-            position: relative;
-            height: 40px;
-            width: 40px;
-          }
         }
       }
 
@@ -489,10 +463,7 @@ body {
         display: -webkit-box;
         display: flex;
         position: relative;
-
-
       }
-
     }
   }
 }
@@ -503,28 +474,114 @@ body {
   display: -webkit-box;
   display: flex;
   position: relative;
-  background: $color-grey;
+  background: url(../images/man.png);
   height: 935px;
-  z-index: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
 
-  &__skewed-block {
+  &__caption {
     display: -webkit-box;
     display: flex;
-    position: absolute;
-    background: #fff;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    width: 705px;
+    height: 110px;
+    margin: 265px 195px 110px;
 
-    .skewed-overlay {
-      position: absolute;
-      background: $color-grey;
-      width: 100%;
-      height: 100%;
-      bottom: 0;
-      left: 0;
-      transform: skewY(-10deg);
-      transform-origin: left;
+    h2 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 12px;
+      color: gray;
+      margin-top: 40px;
+    }
+
+  }
+
+  &__content {
+
+    .row-top,
+    .row-bottom {
+      display: -webkit-box;
+      display: flex;
+      position: relative;
+      width: 705px;
+      margin: 0 195px;
+
+      .col-left,
+      .col-right {
+        width: 165px;
+        height: 75px;
+
+        h1 {
+          margin-bottom: 25px;
+          font-size: 32px;/*
+          -webkit-animation-duration: 10s;
+          animation-duration: 10s;*/
+        }
+
+        p {
+          text-transform: uppercase;
+          font-size: 12px;
+        }
+      }
+
+      .col-left {
+        margin-right: 100px;
+      }
+    }
+
+    .row-top {
+      margin-bottom: 75px;
+
+      .col-left {
+        h1 {
+          color: green;/*
+          -webkit-animation: green-calculation;
+          animation: green-calculation;*/
+        }
+      }
+
+      .col-right {
+        h1 {
+          color: blue;/*
+          -webkit-animation: blue-calculation;
+          animation: blue-calculation;*/
+        }
+      }
+    }
+
+    .row-bottom {
+      .col-left {
+        h1 {
+          color: yellow;/*
+          -webkit-animation: yellow-calculation;
+          animation: yellow-calculation;*/
+        }
+      }
+
+      .col-right {
+        h1 {
+          color: red;
+          /*-webkit-animation: red-calculation;
+          animation: red-calculation;*/
+        }
+      }
     }
   }
 }
+
+/*
+@keyframes green-calculation {
+  0% {
+
+  }
+  100% {
+
+  }
+}*/
