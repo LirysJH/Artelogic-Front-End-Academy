@@ -260,9 +260,10 @@ p {
     .customers__content-col-right {
       display: -webkit-box;
       display: flex;
-      position: relative;
+      position: absolute;
       height: 100%;
-      width: 685px; }
+      width: 685px;
+      right: 0; }
       .customers__content-col-right .cell-vintage,
       .customers__content-col-right .cell-woody,
       .customers__content-col-right .cell-lumber,
@@ -278,8 +279,10 @@ p {
         .customers__content-col-right .cell-lumber .partner-img,
         .customers__content-col-right .cell-retro .partner-img {
           margin: auto;
-          height: 50%;
-          width: 80%; }
+          height: 40%;
+          width: 70%; }
+      .customers__content-col-right .cell-vintage .partner-img {
+        width: 100%; }
 
 /* SERVICES section */
 .services {
@@ -409,7 +412,6 @@ p {
     .careers__caption h2 {
       font-size: 24px; }
     .careers__caption p {
-      /*font-size: 12px;*/
       margin-top: 40px; }
   .careers__content .row-top,
   .careers__content .row-bottom {

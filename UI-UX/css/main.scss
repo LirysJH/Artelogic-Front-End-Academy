@@ -334,9 +334,10 @@ p {
     &-col-right {
       display: -webkit-box;
       display: flex;
-      position: relative;
+      position: absolute;
       height: 100%;
       width: 685px;
+      right: 0;
 
       .cell-vintage,
       .cell-woody,
@@ -351,8 +352,15 @@ p {
 
         .partner-img {
           margin: auto;
-          height: 50%;
-          width: 80%;
+          height: 40%;
+          width: 70%;
+        }
+      }
+
+      .cell-vintage {
+
+        .partner-img {
+          width: 100%;
         }
       }
     }
@@ -416,7 +424,7 @@ p {
         -webkit-box-direction: normal;
         flex-direction: row;
         position: relative;
-        height: 150px; //80
+        height: 150px;
         width: 100%;
 
         .col-left,
@@ -483,7 +491,6 @@ p {
   display: flex;
   position: relative;
   background: url(../images/man.png) center;
-  //background-position: center;
   height: 935px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -506,7 +513,6 @@ p {
     }
 
     p {
-      /*font-size: 12px;*/
       margin-top: 40px;
     }
 
