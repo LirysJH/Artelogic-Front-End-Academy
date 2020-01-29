@@ -7,8 +7,11 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  width: 1745px;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  overflow-x: hidden; }
+
+main {
+  margin: 0 auto; }
 
 p {
   color: gray; }
@@ -306,7 +309,7 @@ p {
       height: 450px;
       width: 750px;
       top: 170px;
-      left: 695px;
+      left: 555px;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       flex-direction: column; }
@@ -387,7 +390,7 @@ p {
   display: -webkit-box;
   display: flex;
   position: relative;
-  background: url(../images/man.png);
+  background: url(../images/man.png) center;
   height: 935px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -401,7 +404,8 @@ p {
     flex-direction: column;
     width: 705px;
     height: 110px;
-    margin: 265px 195px 110px; }
+    margin: 240px 300px 100px;
+    z-index: 2; }
     .careers__caption h2 {
       font-size: 24px; }
     .careers__caption p {
@@ -413,7 +417,7 @@ p {
     display: flex;
     position: relative;
     width: 705px;
-    margin: 0 195px; }
+    margin: 0 300px; }
     .careers__content .row-top .col-left,
     .careers__content .row-top .col-right,
     .careers__content .row-bottom .col-left,
@@ -424,7 +428,7 @@ p {
       .careers__content .row-top .col-right h1,
       .careers__content .row-bottom .col-left h1,
       .careers__content .row-bottom .col-right h1 {
-        margin-bottom: 25px;
+        margin-bottom: 5px;
         font-size: 32px;
                 /*
 -webkit-animation-duration: 10s;
@@ -437,9 +441,9 @@ animation-duration: 10s;*/ }
         font-size: 12px; }
     .careers__content .row-top .col-left,
     .careers__content .row-bottom .col-left {
-      margin-right: 100px; }
+      margin-right: 50px; }
   .careers__content .row-top {
-    margin-bottom: 75px; }
+    margin-bottom: 50px; }
     .careers__content .row-top .col-left h1 {
       color: green;
              /*
@@ -503,10 +507,9 @@ animation: yellow-calculation;*/ }
     height: 740px;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 -1px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 -1px 5px 5px rgba(0, 0, 0, 0.05);
     z-index: 1;
-    top: 25%;
-    left: 30%; }
+    top: 30%; }
     .contact-us__form__content {
       display: -webkit-box;
       display: flex;
@@ -578,7 +581,7 @@ animation: yellow-calculation;*/ }
           background: none;
           border: none;
           border-radius: 20px;
-          box-shadow: 0 -1px 5px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 -1px 5px 5px rgba(0, 0, 0, 0.08);
           cursor: pointer; }
 
 /* FOOTER */
@@ -586,13 +589,10 @@ footer {
   display: -webkit-box;
   display: flex;
   position: relative;
-  height: 780px; }
-  footer .img-bg {
-    position: absolute;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain; }
+  height: 785px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background: url(../images/footer-bg.png) center; }
   footer .footer__content {
     display: -webkit-box;
     display: flex;
@@ -601,8 +601,7 @@ footer {
     height: 405px;
     top: 380px;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    left: 305px; }
+    z-index: 1; }
     footer .footer__content__col-01 {
       display: -webkit-box;
       display: flex;
@@ -612,7 +611,7 @@ footer {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       flex-direction: column;
-      padding: 65px 0 130px; }
+      padding: 50px 0; }
       footer .footer__content__col-01 .logo {
         display: -webkit-box;
         display: flex;
@@ -652,7 +651,7 @@ footer {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       flex-direction: column;
-      margin-top: 80px;
+      margin-top: 50px;
       margin-right: 82px; }
       footer .footer__content__col-02 .caption, footer .footer__content__col-03 .caption, footer .footer__content__col-04 .caption {
         position: relative;
@@ -661,7 +660,10 @@ footer {
         text-transform: uppercase; }
       footer .footer__content__col-02 p, footer .footer__content__col-03 p, footer .footer__content__col-04 p {
         margin: 25px 55px 0;
-        font-size: 14px; }
+        font-size: 14px;
+        cursor: pointer; }
+      footer .footer__content__col-02 p:hover, footer .footer__content__col-03 p:hover, footer .footer__content__col-04 p:hover {
+        color: #000; }
       footer .footer__content__col-02 p:nth-child(1), footer .footer__content__col-03 p:nth-child(1), footer .footer__content__col-04 p:nth-child(1) {
         margin: 35px 55px 0; }
     footer .footer__content__col-02 {
@@ -685,7 +687,7 @@ footer {
         footer .footer__content__col-04 .icons .fa {
           height: 100%;
           width: 20px;
-          margin-right: 30px;
+          margin-right: 10px;
           color: gray;
           cursor: pointer; }
         footer .footer__content__col-04 .icons .fa:hover {
