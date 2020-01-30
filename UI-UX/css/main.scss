@@ -178,6 +178,8 @@ p {
   width: 100%;
   height: 780px;
   z-index: 5;
+  -webkit-box-pack: center;
+  justify-content: center;
 
   .img-bg {
     position: absolute;
@@ -194,7 +196,6 @@ p {
     position: relative;
     width: $max-width;
     height: 100%;
-    margin: $margin-center;
     overflow-x: hidden;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
@@ -207,7 +208,6 @@ p {
       position: relative;
       width: $max-width;
       height: 100%;
-      margin: $margin-center;
       flex-shrink: 0;
       scroll-behavior: smooth;
 
@@ -241,18 +241,18 @@ p {
           width: 100%;
           height: 100%;
 
-          h2 {
+          .title {
             text-align: center;
             font-size: 36px;
           }
 
-          p {
+          .description {
             margin: 15px 0 36px;
             text-align: center;
             font-size: 21px;
           }
 
-          .explore {
+          .explore-btn {
             position: relative;
             width: 140px;
             height: 45px;
@@ -309,7 +309,7 @@ p {
     height: 100%;
     margin: $margin-center;
 
-    &-col-left {
+    &__col {
       display: -webkit-box;
       display: flex;
       flex-direction: column;
@@ -326,15 +326,6 @@ p {
       p {
         font-size: 14px;
       }
-    }
-
-    &-col-right {
-      display: -webkit-box;
-      display: flex;
-      position: absolute;
-      height: 100%;
-      width: 685px;
-      right: 0;
 
       .cell-vintage,
       .cell-woody,
@@ -358,6 +349,13 @@ p {
           width: 100%;
         }
       }
+    }
+
+    .col-right {
+      flex-direction: row;
+      position: absolute;
+      width: 685px;
+      right: 0;
     }
   }
 }
