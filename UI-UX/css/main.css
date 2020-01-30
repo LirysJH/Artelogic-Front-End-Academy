@@ -378,44 +378,33 @@ main {
       font-size: 24px; }
     .careers__caption p {
       margin-top: 40px; }
-  .careers__content .row-top,
-  .careers__content .row-bottom {
+  .careers__content .row {
     display: -webkit-box;
     display: flex;
     position: relative;
     width: 705px;
     margin: 0 300px; }
-    .careers__content .row-top .col-left,
-    .careers__content .row-top .col-right,
-    .careers__content .row-bottom .col-left,
-    .careers__content .row-bottom .col-right {
+    .careers__content .row .col {
       width: 165px;
       height: 75px; }
-      .careers__content .row-top .col-left h1,
-      .careers__content .row-top .col-right h1,
-      .careers__content .row-bottom .col-left h1,
-      .careers__content .row-bottom .col-right h1 {
+      .careers__content .row .col .counter {
         margin-bottom: 5px;
         font-size: 32px;
         opacity: .35; }
-      .careers__content .row-top .col-left p,
-      .careers__content .row-top .col-right p,
-      .careers__content .row-bottom .col-left p,
-      .careers__content .row-bottom .col-right p {
+      .careers__content .row .col p {
         text-transform: uppercase;
         font-size: 12px; }
-    .careers__content .row-top .col-left,
-    .careers__content .row-bottom .col-left {
+    .careers__content .row .col-left {
       margin-right: 50px; }
-  .careers__content .row-top {
+  .careers__content .top {
     margin-bottom: 50px; }
-    .careers__content .row-top .col-left h1 {
-      color: green; }
-    .careers__content .row-top .col-right h1 {
-      color: blue; }
-  .careers__content .row-bottom .col-left h1 {
-    color: yellow; }
-  .careers__content .row-bottom .col-right h1 {
+    .careers__content .top .left .counter {
+      color: #26de81; }
+    .careers__content .top .right .counter {
+      color: #45aaf2; }
+  .careers__content .bottom .left .counter {
+    color: #f7b731; }
+  .careers__content .bottom .right .counter {
     color: red; }
 
 /* CONTACT US section */

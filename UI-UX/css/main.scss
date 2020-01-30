@@ -500,20 +500,18 @@ main {
 
   &__content {
 
-    .row-top,
-    .row-bottom {
+    .row {
       display: -webkit-box;
       display: flex;
       position: relative;
       width: 705px;
       margin: 0 300px;
 
-      .col-left,
-      .col-right {
+      .col {
         width: 165px;
         height: 75px;
 
-        h1 {
+        .counter {
           margin-bottom: 5px;
           font-size: 32px;
           opacity: .35;
@@ -530,31 +528,36 @@ main {
       }
     }
 
-    .row-top {
+    .top {
       margin-bottom: 50px;
 
-      .col-left {
-        h1 {
-          color: green;
+      .left {
+
+        .counter {
+          color: #26de81;
         }
       }
 
-      .col-right {
-        h1 {
-          color: blue;
+      .right {
+
+        .counter {
+          color: #45aaf2;
         }
       }
     }
 
-    .row-bottom {
-      .col-left {
-        h1 {
-          color: yellow;
+    .bottom {
+
+      .left {
+
+        .counter {
+          color: #f7b731;
         }
       }
 
-      .col-right {
-        h1 {
+      .right {
+
+        .counter {
           color: red;
         }
       }
