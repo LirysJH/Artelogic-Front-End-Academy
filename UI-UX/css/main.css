@@ -278,9 +278,7 @@ p {
         .customers__content-col-right .cell-woody .partner-img,
         .customers__content-col-right .cell-lumber .partner-img,
         .customers__content-col-right .cell-retro .partner-img {
-          margin: auto;
-          height: 40%;
-          width: 70%; }
+          margin: auto; }
       .customers__content-col-right .cell-vintage .partner-img {
         width: 100%; }
 
@@ -344,7 +342,6 @@ p {
           flex-direction: row;
           margin-top: 115px;
           position: relative;
-          height: 75px;
           width: 345px; }
           .services__content-col-right .content-row-top .col-left img,
           .services__content-col-right .content-row-top .col-right img,
@@ -352,8 +349,9 @@ p {
           .services__content-col-right .content-row-bottom .col-right img {
             display: block;
             position: relative;
-            height: 40px;
-            width: 40px; }
+                   /*
+height: 40px;
+width: 40px;*/ }
           .services__content-col-right .content-row-top .col-left .content-box,
           .services__content-col-right .content-row-top .col-right .content-box,
           .services__content-col-right .content-row-bottom .col-left .content-box,
@@ -432,50 +430,27 @@ p {
       .careers__content .row-bottom .col-right h1 {
         margin-bottom: 5px;
         font-size: 32px;
-                /*
--webkit-animation-duration: 10s;
-animation-duration: 10s;*/ }
+        opacity: .35; }
       .careers__content .row-top .col-left p,
       .careers__content .row-top .col-right p,
       .careers__content .row-bottom .col-left p,
       .careers__content .row-bottom .col-right p {
         text-transform: uppercase;
-        font-size: 12px;
-        font-family: Roboto; }
+        font-size: 12px; }
     .careers__content .row-top .col-left,
     .careers__content .row-bottom .col-left {
       margin-right: 50px; }
   .careers__content .row-top {
     margin-bottom: 50px; }
     .careers__content .row-top .col-left h1 {
-      color: green;
-             /*
--webkit-animation: green-calculation;
-animation: green-calculation;*/ }
+      color: green; }
     .careers__content .row-top .col-right h1 {
-      color: blue;
-            /*
--webkit-animation: blue-calculation;
-animation: blue-calculation;*/ }
+      color: blue; }
   .careers__content .row-bottom .col-left h1 {
-    color: yellow;
-              /*
--webkit-animation: yellow-calculation;
-animation: yellow-calculation;*/ }
+    color: yellow; }
   .careers__content .row-bottom .col-right h1 {
-    color: red;
-    /*-webkit-animation: red-calculation;
-    animation: red-calculation;*/ }
+    color: red; }
 
-/*
-@keyframes green-calculation {
-  0% {
-
-  }
-  100% {
-
-  }
-}*/
 /* CONTACT US section */
 .contact-us {
   display: -webkit-box;
