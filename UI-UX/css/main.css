@@ -391,7 +391,7 @@ main {
         margin-bottom: 5px;
         font-size: 32px;
         opacity: .35; }
-      .careers__content .row .col p {
+      .careers__content .row .col .counter-desc {
         text-transform: uppercase;
         font-size: 12px; }
     .careers__content .row .col-left {
