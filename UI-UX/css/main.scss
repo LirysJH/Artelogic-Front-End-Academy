@@ -19,8 +19,9 @@ main {
   margin: $margin-center;
 }
 
-p {
+.description {
   color: gray;
+  font-size: 14px;
 }
 
 /* HEADER */
@@ -318,13 +319,9 @@ p {
       width: 360px;
       padding: 42px 0;
 
-      h2 {
+      .caption {
         margin: 0 0 24px;
         font-size: 32px;
-      }
-
-      p {
-        font-size: 14px;
       }
 
       .cell-vintage,
@@ -376,7 +373,7 @@ p {
     flex-direction: row;
     justify-content: center;
 
-    &-col-left {
+    &__col {
       display: -webkit-box;
       display: flex;
       position: absolute;
@@ -386,9 +383,7 @@ p {
       left: -250px;
     }
 
-    &-col-right {
-      display: -webkit-box;
-      display: flex;
+    .column-right {
       position: relative;
       height: 450px;
       width: 750px;
@@ -403,14 +398,13 @@ p {
         height: 95px;
         width: 630px;
 
-        h2 {
+        .title {
           font-size: 30px;
           margin-bottom: 35px;
         }
       }
 
-      .content-row-top,
-      .content-row-bottom {
+      .content-row {
         display: -webkit-box;
         display: flex;
         -webkit-box-orient: horizontal;
@@ -419,24 +413,24 @@ p {
         position: relative;
         height: 150px;
         width: 100%;
+        padding: 115px 0 0;
 
-        .col-left,
-        .col-right {
+        .col {
           display: -webkit-box;
           display: flex;
           -webkit-box-orient: horizontal;
           -webkit-box-direction: normal;
           flex-direction: row;
-          margin-top: 115px;
+          margin-right: 30px;
           position: relative;
-          //height: 75px;
+          height: 75px;
           width: 345px;
 
           img {
             display: block;
-            position: relative;/*
-            height: 40px;
-            width: 40px;*/
+            position: absolute;
+            left: 0;
+            top: 0;
           }
 
           .content-box {
@@ -450,28 +444,21 @@ p {
             width: 260px;
             height: 100%;
 
-            h3 {
+            .title {
               font-size: 12px;
               text-transform: uppercase;
             }
 
-            p {
+            .description {
               position: absolute;
               bottom: 5px;
-              color: gray;
             }
           }
         }
 
-        .col-right{
-          margin-left: 40px;
+        .col:nth-child(2n+2) {
+          margin-right: 0;
         }
-      }
-
-      .content-row-bottom {
-        display: -webkit-box;
-        display: flex;
-        position: relative;
       }
     }
   }
