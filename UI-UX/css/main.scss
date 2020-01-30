@@ -57,7 +57,7 @@ p {
       top: 48px;
     }
 
-    .menu__top-nav {
+    .menu__nav-row {
       display: -webkit-box;
       display: flex;
       position: relative;
@@ -65,9 +65,8 @@ p {
       height: 48px;
       -webkit-box-align: center;
       align-items: center;
-      border-bottom: 1px solid rgba(0, 0, 0, .2);
 
-      .menu__top-nav-icons {
+      &__icons {
         display: -webkit-box;
         display: flex;
         position: relative;
@@ -85,7 +84,7 @@ p {
         }
       }
 
-      .menu__top-nav-phone {
+      &__phone {
         display: -webkit-box;
         display: flex;
         position: relative;
@@ -94,16 +93,8 @@ p {
         justify-content: flex-end;
         font-size: 14px;
       }
-    }
 
-    .menu__bottom-nav {
-      display: -webkit-box;
-      display: flex;
-      position: relative;
-      width: 100%;
-      height: 62px;
-
-      .menu__bottom-nav-left {
+      &__col {
         display: -webkit-box;
         display: flex;
         position: relative;
@@ -122,11 +113,7 @@ p {
         }
       }
 
-      .menu__bottom-nav-right {
-        display: -webkit-box;
-        display: flex;
-        position: relative;
-        height: 100%;
+      .right-col {
         width: 80%;
         -webkit-box-pack: end;
         justify-content: flex-end;
@@ -140,8 +127,7 @@ p {
           flex-direction: row;
           list-style: none;
 
-          .menu-item,
-          .menu-item-burger {
+          &__item {
             display: -webkit-box;
             display: flex;
             position: relative;
@@ -149,7 +135,7 @@ p {
             height: 100%;
             margin-left: 30px;
 
-            a {
+            &__link {
               display: -webkit-box;
               display: flex;
               -webkit-box-align: center;
@@ -161,14 +147,24 @@ p {
               color: #000;
               text-transform: uppercase;
               font-size: 12px;
+              border-top: 2px solid transparent;
             }
 
-            a:hover {
+            &__link:hover {
               border-top: 2px solid #20bf6b;
             }
           }
+
+          .burger {
+            cursor: pointer;
+          }
         }
       }
+    }
+
+    .bottom-nav {
+      height: 62px;
+      border-top: 1px solid rgba(0, 0, 0, .2);
     }
   }
 }
@@ -299,7 +295,8 @@ p {
   position: relative;
   height: 160px;
   width: 100%;
-  margin: $margin-center;
+  -webkit-box-pack: center;
+  justify-content: center;
   border-top: 2px solid $color-grey;
   border-bottom: 2px solid $color-grey;
   z-index: 5;
