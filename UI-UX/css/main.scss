@@ -590,12 +590,12 @@ main {
     position: relative;
     top: 0;
 
-    h2,
-    p {
+    .caption,
+    .description {
       text-align: center;
     }
 
-    h2 {
+    .caption {
       font-size: 32px;
       margin-bottom: 35px;
     }
@@ -621,95 +621,94 @@ main {
       height: 100%;
       -webkit-box-pack: center;
       justify-content: center;
+      padding: 0 65px;
 
       .wrapper {
         display: -webkit-box;
         display: flex;
         position: relative;
-        height: 100%;
-        width: 615px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 25px 0;
 
-        .label {
-          position: absolute;
-          text-transform: uppercase;
-        }
-
-        .email-l {
-          top: 75px;
-        }
-
-        .name-l,
-        .surname-l {
-          top: -35px;
-        }
-
-        .surname-l {
-          left: 315px;
-        }
-
-        .msg-l {
-          top: 340px;
-        }
-
-        .email-input,
-        .input-row,
-        .message-input {
-          display: block;
+        &__field {
+          display: -webkit-box;
+          display: flex;
           position: relative;
-          width: 100%;
-          border: none;
-        }
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          flex-direction: column;
+          height: 15%;
+          margin: 20px 0 10px;
 
-        .email-input,
-        .input-row {
-          height: 68px;
-        }
-
-        .email-input,
-        .message-input {
-          background: rgba(0, 0, 0, .1);
-          border-radius: 5px;
-          padding: 10px;
-        }
-
-        .email-input {
-          margin: 112px 0 65px;
-        }
-
-        .input-row {
-          margin-bottom: 65px;
-
-          .name-input,
-          .surname-input {
-            width: 300px;
+          &__col {
+            display: -webkit-box;
+            display: flex;
+            position: relative;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
             height: 100%;
+            width: 50%;
+
+            .name-input,
+            .surname-input {
+              background: rgba(0, 0, 0, .1);
+              border-radius: 5px;
+              border: none;
+              padding: 10px;
+              height: 50%;
+            }
+
+            .surname-input {
+              margin-left: 10px;
+              right: 0;
+            }
+          }
+
+          .email-input,
+          .message-input {
             background: rgba(0, 0, 0, .1);
             border-radius: 5px;
-            border: none;
             padding: 10px;
+            border: none;
+            width: 100%;
+            height: 50%;
           }
 
-          .surname-input {
-            margin-left: 10px;
-            right: 0;
+          .message-input {
+            height: 80%;
+            resize: none;
+          }
+
+          .label {
+            position: relative;
+            text-transform: uppercase;
+            margin: 10px 5px;
+          }
+
+          .surname-label {
+            margin: 10px 15px;
           }
         }
 
-        .message-input {
-          width: 100%;
-          height: 180px;
-          resize: none;
+        .name-surname-field {
+          flex-direction: row;
+        }
+
+        .message-field {
+          height: 40%;
         }
 
         .submit-btn {
           width: 140px;
           height: 45px;
-          margin: 60px 0 90px;
           font-size: 14px;
           color: green;
+          margin: 30px 0;
           background: none;
           border: none;
           border-radius: 20px;

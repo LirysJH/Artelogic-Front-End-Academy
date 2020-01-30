@@ -427,10 +427,10 @@ main {
   .contact-us__caption {
     position: relative;
     top: 0; }
-    .contact-us__caption h2,
-    .contact-us__caption p {
+    .contact-us__caption .caption,
+    .contact-us__caption .description {
       text-align: center; }
-    .contact-us__caption h2 {
+    .contact-us__caption .caption {
       font-size: 32px;
       margin-bottom: 35px; }
   .contact-us__form {
@@ -451,68 +451,73 @@ main {
       width: 100%;
       height: 100%;
       -webkit-box-pack: center;
-      justify-content: center; }
+      justify-content: center;
+      padding: 0 65px; }
       .contact-us__form__content .wrapper {
         display: -webkit-box;
         display: flex;
         position: relative;
-        height: 100%;
-        width: 615px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        flex-direction: column; }
-        .contact-us__form__content .wrapper .label {
-          position: absolute;
-          text-transform: uppercase; }
-        .contact-us__form__content .wrapper .email-l {
-          top: 75px; }
-        .contact-us__form__content .wrapper .name-l,
-        .contact-us__form__content .wrapper .surname-l {
-          top: -35px; }
-        .contact-us__form__content .wrapper .surname-l {
-          left: 315px; }
-        .contact-us__form__content .wrapper .msg-l {
-          top: 340px; }
-        .contact-us__form__content .wrapper .email-input,
-        .contact-us__form__content .wrapper .input-row,
-        .contact-us__form__content .wrapper .message-input {
-          display: block;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 25px 0; }
+        .contact-us__form__content .wrapper__field {
+          display: -webkit-box;
+          display: flex;
           position: relative;
-          width: 100%;
-          border: none; }
-        .contact-us__form__content .wrapper .email-input,
-        .contact-us__form__content .wrapper .input-row {
-          height: 68px; }
-        .contact-us__form__content .wrapper .email-input,
-        .contact-us__form__content .wrapper .message-input {
-          background: rgba(0, 0, 0, 0.1);
-          border-radius: 5px;
-          padding: 10px; }
-        .contact-us__form__content .wrapper .email-input {
-          margin: 112px 0 65px; }
-        .contact-us__form__content .wrapper .input-row {
-          margin-bottom: 65px; }
-          .contact-us__form__content .wrapper .input-row .name-input,
-          .contact-us__form__content .wrapper .input-row .surname-input {
-            width: 300px;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          flex-direction: column;
+          height: 15%;
+          margin: 20px 0 10px; }
+          .contact-us__form__content .wrapper__field__col {
+            display: -webkit-box;
+            display: flex;
+            position: relative;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
             height: 100%;
+            width: 50%; }
+            .contact-us__form__content .wrapper__field__col .name-input,
+            .contact-us__form__content .wrapper__field__col .surname-input {
+              background: rgba(0, 0, 0, 0.1);
+              border-radius: 5px;
+              border: none;
+              padding: 10px;
+              height: 50%; }
+            .contact-us__form__content .wrapper__field__col .surname-input {
+              margin-left: 10px;
+              right: 0; }
+          .contact-us__form__content .wrapper__field .email-input,
+          .contact-us__form__content .wrapper__field .message-input {
             background: rgba(0, 0, 0, 0.1);
             border-radius: 5px;
+            padding: 10px;
             border: none;
-            padding: 10px; }
-          .contact-us__form__content .wrapper .input-row .surname-input {
-            margin-left: 10px;
-            right: 0; }
-        .contact-us__form__content .wrapper .message-input {
-          width: 100%;
-          height: 180px;
-          resize: none; }
+            width: 100%;
+            height: 50%; }
+          .contact-us__form__content .wrapper__field .message-input {
+            height: 80%;
+            resize: none; }
+          .contact-us__form__content .wrapper__field .label {
+            position: relative;
+            text-transform: uppercase;
+            margin: 10px 5px; }
+          .contact-us__form__content .wrapper__field .surname-label {
+            margin: 10px 15px; }
+        .contact-us__form__content .wrapper .name-surname-field {
+          flex-direction: row; }
+        .contact-us__form__content .wrapper .message-field {
+          height: 40%; }
         .contact-us__form__content .wrapper .submit-btn {
           width: 140px;
           height: 45px;
-          margin: 60px 0 90px;
           font-size: 14px;
           color: green;
+          margin: 30px 0;
           background: none;
           border: none;
           border-radius: 20px;
