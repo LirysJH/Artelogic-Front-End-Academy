@@ -358,7 +358,7 @@ main {
   display: -webkit-box;
   display: flex;
   position: relative;
-  background: url(../images/man.png) center;
+  background: url(../images/backgrounds/man.png) center;
   height: 935px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
