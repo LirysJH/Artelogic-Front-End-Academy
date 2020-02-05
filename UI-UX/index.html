@@ -9,33 +9,33 @@
   </head>
   <body>
     <header class="menu">
-      <idv class="menu__nav">
-        <div class="menu__top-nav">
-          <div class="menu__top-nav-icons">
+      <div class="menu__nav">
+        <div class="menu__nav-row">
+          <div class="menu__nav-row__icons">
             <i class="fa fa-facebook-square"></i>
             <i class="fa fa-instagram"></i>
             <i class="fa fa-twitter"></i>
             <i class="fa fa-telegram"></i>
             <i class="fa fa-skype"></i>
           </div>
-          <div class="menu__top-nav-phone">
+          <div class="menu__nav-row__phone">
             <p>Hotline +1 123 5444 588</p>
           </div>
         </div>
-        <div class="menu__bottom-nav">
-          <div class="menu__bottom-nav-left">
+        <div class="menu__nav-row bottom-nav">
+          <div class="menu__nav-row__col left-col">
             <img src="./images/logo.png" alt="logo" class="logo" />
             <p class="logo-text">firefly</p>
           </div>
-          <div class="menu__bottom-nav-right">
+          <div class="menu__nav-row__col right-col">
             <ul class="menu-list">
-              <li class="menu-item"><a href="#home">Home</a></li>
-              <li class="menu-item"><a href="#">About</a></li>
-              <li class="menu-item"><a href="#services">Services</a></li>
-              <li class="menu-item"><a href="#">Blog</a></li>
-              <li class="menu-item"><a href="#">Terms</a></li>
-              <li class="menu-item"><a href="#contact-us">Contact Us</a></li>
-              <li class="menu-item-burger"><a href="#">&#9776;</a></li>
+              <li class="menu-list__item"><a class="menu-list__item__link" href="#home">Home</a></li>
+              <li class="menu-list__item"><a class="menu-list__item__link" href="#">About</a></li>
+              <li class="menu-list__item"><a class="menu-list__item__link" href="#services">Services</a></li>
+              <li class="menu-list__item"><a class="menu-list__item__link" href="#">Blog</a></li>
+              <li class="menu-list__item"><a class="menu-list__item__link" href="#">Terms</a></li>
+              <li class="menu-list__item"><a class="menu-list__item__link" href="#contact-us">Contact Us</a></li>
+              <li class="menu-list__item burger">&#9776;</li>
             </ul>
           </div>
         </div>
@@ -44,67 +44,68 @@
 
     <main>
       <section id="home">
-        <img class="img-bg" src="./images/bg.png" alt="Forest Background" />
+        <img class="img-bg" src="./images/backgrounds/bg.png" alt="Forest Background" />
         <div class="slider">
           <div class="slider__slide">
             <div class="slider__slide__content">
               <div class="slider__slide__content-text">
-                <h2>We create an alround experience for<br>your Corporate business</h2>
-                <p>
+                <h2 class="title">We create an alround experience for<br>your Corporate business</h2>
+                <p class="description">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <input type="button" class="explore" value="Explore Now">
+                <input type="button" class="explore-btn" value="Explore Now">
               </div>
             </div>
           </div>
           <div class="slider__slide">
             <div class="slider__slide__content">
               <div class="slider__slide__content-text">
-                <h2>We create an alround experience for<br>your Corporate business</h2>
-                <p>
+                <h2 class="title">We create an alround experience for<br>your Corporate business</h2>
+                <p class="description">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <input type="button" class="explore" value="Explore Now">
+                <input type="button" class="explore-btn" value="Explore Now">
               </div>
             </div>
           </div>
           <div class="slider__slide">
             <div class="slider__slide__content">
               <div class="slider__slide__content-text">
-                <h2>We create an alround experience for<br>your Corporate business</h2>
-                <p>
+                <h2 class="title">We create an alround experience for<br>your Corporate business</h2>
+                <p class="description">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <input type="button" class="explore" value="Explore Now">
+                <input type="button" class="explore-btn" value="Explore Now">
               </div>
             </div>
           </div>
           <div class="slider__slide">
             <div class="slider__slide__content">
               <div class="slider__slide__content-text">
-                <h2>We create an alround experience for<br>your Corporate business</h2>
-                <p>
+                <h2 class="title">We create an alround experience for<br>your Corporate business</h2>
+                <p class="description">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
-                <input type="button" class="explore" value="Explore Now">
+                <input type="button" class="explore-btn" value="Explore Now">
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <section class="customers">
         <div class="customers__content">
-          <div class="customers__content-col-left">
-            <h2>Our Customers</h2>
-            <p>
+          <div class="customers__content__col col-left">
+            <h2 class="caption">Our Customers</h2>
+            <p class="description">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
           </div>
-          <div class="customers__content-col-right">
+          <div class="customers__content__col col-right">
             <div class="cell-vintage">
               <img class="partner-img" src="./images/partners/vintage.png" alt="Vintage body care" />
             </div>
@@ -120,54 +121,55 @@
           </div>
         </div>
       </section>
+
       <section class="services" id="services">
         <div class="services__content">
-          <div class="services__content-col-left">
-            <img src="./images/services-image.png" alt="Laptop" />
+          <div class="services__content__col column-left">
+            <img src="./images/services section/services-image.png" alt="Laptop" />
           </div>
-          <div class="services__content-col-right">
+          <div class="services__content__col column-right">
             <div class="caption">
-              <h2>Our Services & Special Fields</h2>
-              <p>
+              <h2 class="title">Our Services & Special Fields</h2>
+              <p class="description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
-            <div class="content-row-top">
-              <div class="col-left">
-                <img src="./images/bycicle.png" alt="Bycicle" />
+            <div class="content-row row-top">
+              <div class="col">
+                <img src="./images/services section/bycicle.png" alt="Bycicle" />
                 <div class="content-box">
-                  <h3>Discovery & Strategy</h3>
-                  <p>
+                  <h3 class="title">Discovery & Strategy</h3>
+                  <p class="description">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </p>
                 </div>
               </div>
-              <div class="col-right">
-                <img src="./images/lightbulb.png" alt="Lightbulb" />
+              <div class="col">
+                <img src="./images/services section/lightbulb.png" alt="Lightbulb" />
                 <div class="content-box">
-                  <h3>Manage Projects</h3>
-                  <p>
+                  <h3 class="title">Manage Projects</h3>
+                  <p class="description">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="content-row-bottom">
-              <div class="col-left">
-                <img src="./images/paperclip.png" alt="Paperclip" />
+            <div class="content-row row-bottom">
+              <div class="col">
+                <img src="./images/services section/paperclip.png" alt="Paperclip" />
                 <div class="content-box">
-                  <h3>Team Statistics</h3>
-                  <p>
+                  <h3 class="title">Team Statistics</h3>
+                  <p class="description">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </p>
                 </div>
               </div>
-              <div class="col-right">
-                <img src="./images/checkbox.png" alt="Checkbox" />
+              <div class="col">
+                <img src="./images/services section/checkbox.png" alt="Checkbox" />
                 <div class="content-box">
-                  <h3>Unlimited Sharing</h3>
-                  <p>
+                  <h3 class="title">Unlimited Sharing</h3>
+                  <p class="description">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </p>
                 </div>
@@ -176,6 +178,7 @@
           </div>
         </div>
       </section>
+
       <section class="careers">
         <div class="careers__caption">
           <h2>Let's build great things together</h2>
@@ -185,33 +188,34 @@
           </p>
         </div>
         <div class="careers__content">
-          <div class="row-top">
-            <div class="col-left">
-              <h1>785</h1>
-              <p>Projects Completed</p>
+          <div class="row top">
+            <div class="col left">
+              <h1 class="counter">785</h1>
+              <p class="counter-desc">Projects Completed</p>
             </div>
-            <div class="col-right">
-              <h1>623</h1>
-              <p>Coffees Consumed</p>
+            <div class="col right">
+              <h1 class="counter">623</h1>
+              <p class="counter-desc">Coffees Consumed</p>
             </div>
           </div>
-          <div class="row-bottom">
-            <div class="col-left">
-              <h1>619</h1>
-              <p>Happy Customers</p>
+          <div class="row bottom">
+            <div class="col left">
+              <h1 class="counter">619</h1>
+              <p class="counter-desc">Happy Customers</p>
             </div>
-            <div class="col-right">
-              <h1>246</h1>
-              <p>Lines of codes</p>
+            <div class="col right">
+              <h1 class="counter">246</h1>
+              <p class="counter-desc">Lines of codes</p>
             </div>
           </div>
         </div>
       </section>
+
       <section class="contact-us" id="contact-us">
-        <img class="img-bg" src="./images/paint-bg.png" alt="Paint Background" />
+        <img class="img-bg" src="./images/backgrounds/paint-bg.png" alt="Paint Background" />
         <div class="contact-us__caption">
-          <h2>Contact Us</h2>
-          <p>
+          <h2 class="caption">Contact Us</h2>
+          <p class="description">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -221,16 +225,24 @@
         <div class="contact-us__form">
           <div class="contact-us__form__content">
             <div class="wrapper">
-              <label class="email-l label" for="email">Email address</label>
-              <input class="email-input" type="text" name="email" value="">
-              <div class="input-row">
-                <label class="name-l label" for="fname">First name</label>
-                <input class="name-input" type="text" name="fname" value="">
-                <label class="surname-l label" for="jname">Last name</label>
-                <input class="surname-input" type="text" name="lname" value="">
+              <div class="wrapper__field">
+                <label class="email-label label" for="email">Email address</label>
+                <input class="email-input" type="text" name="email" value="">
               </div>
-              <label class="msg-l label" for="message">Message</label>
-              <textarea class="message-input" name="message"></textarea>
+              <div class="wrapper__field name-surname-field">
+                <div class="wrapper__field__col">
+                  <label class="name-label label" for="fname">First name</label>
+                  <input class="name-input" type="text" name="fname" value="">
+                </div>
+                <div class="wrapper__field__col">
+                  <label class="surname-label label" for="lname">Last name</label>
+                  <input class="surname-input" type="text" name="lname" value="">
+                </div>
+              </div>
+              <div class="wrapper__field message-field">
+                <label class="msg-label label" for="message">Message</label>
+                <textarea class="message-input" name="message"></textarea>
+              </div>
               <input class="submit-btn" type="submit" value="Send Now">
             </div>
           </div>
@@ -240,13 +252,13 @@
 
     <footer>
       <div class="footer__content">
-        <div class="footer__content__col-01"> <!-- logo, story, privacy policy, terms and conditions -->
+        <div class="footer__content__col">
           <div class="logo">
             <img src="./images/logo.png" alt="logo" class="logo" />
             <p class="logo-text">firefly</p>
           </div>
           <div class="story">
-            <p>
+            <p class="description">
               Just then her head struck against the roof of the hall: in<br>
               fact she was now more than nine feet hight, and she at<br>
               once took up the little golden key and hurried off to the<br>
@@ -258,24 +270,24 @@
             <h3 class="label">Terms and Conditions</h3>
           </div>
         </div>
-        <div class="footer__content__col-02"> <!-- categories -->
+        <div class="footer__content__col footer__content__categories-col">
           <h3 class="caption">Categories</h3>
-          <p>Home</p>
-          <p>Testimonials</p>
-          <p>Team</p>
-          <p>Career</p>
-          <p>Contact</p>
+          <p class="description">Home</p>
+          <p class="description">Testimonials</p>
+          <p class="description">Team</p>
+          <p class="description">Career</p>
+          <p class="description">Contact</p>
         </div>
-        <div class="footer__content__col-03"> <!-- community -->
+        <div class="footer__content__col footer__content__community-col">
           <h3 class="caption">Community</h3>
-          <p>Blog</p>
-          <p>Discussions</p>
-          <p>Collections</p>
-          <p>Members</p>
-          <p>Products</p>
-          <p>Help Center</p>
+          <p class="description">Blog</p>
+          <p class="description">Discussions</p>
+          <p class="description">Collections</p>
+          <p class="description">Members</p>
+          <p class="description">Products</p>
+          <p class="description">Help Center</p>
         </div>
-        <div class="footer__content__col-04"> <!-- follow us -->
+        <div class="footer__content__col footer__content__follow-us-col">
           <h3 class="caption">Follow us</h3>
           <div class="icons">
             <i class="fa fa-twitter"></i>
