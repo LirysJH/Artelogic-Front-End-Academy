@@ -3,7 +3,6 @@ import './App.css';
 import Form from './Form/form.jsx';
 import Books from './Books/books.jsx';
 
-//https://www.googleapis.com/books/v1/volumes?q=javascript&key=AIzaSyCgw4YLLZrjbxgKkJiPFuxKhoG22NU28No
 const apiKey = "AIzaSyCgw4YLLZrjbxgKkJiPFuxKhoG22NU28No";
 
 class App extends Component {
