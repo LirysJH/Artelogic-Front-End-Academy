@@ -18,7 +18,7 @@ class App extends Component {
   getBookInfo = async(event) => {
     event.preventDefault(); // preventing web-page from refreshing
 
-    const inputQuery = event.target.elements.query.value; //input value 
+    let inputQuery = event.target.elements.query.value; //input value 
 
     const api_url = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${inputQuery}&key=${apiKey}`);
     const data = await api_url.json();
