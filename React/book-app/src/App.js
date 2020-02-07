@@ -19,7 +19,8 @@ class App extends Component {
     let inputQuery = event.target.elements.query.value;
 
     //async request to Google Books API
-    const api_url = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${inputQuery}&key=${apiKey}`);
+    const api_url = await
+    fetch(`https://www.googleapis.com/books/v1/volumes?q=${inputQuery}&key=${apiKey}`);
     const data = await api_url.json();
 
     //changing state

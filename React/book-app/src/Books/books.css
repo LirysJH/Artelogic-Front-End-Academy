@@ -6,3 +6,7 @@
 .container .container__item {
     margin: 10px;
 }
+
+.container .book-link {
+    outline: none;
+}
