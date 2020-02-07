@@ -8,55 +8,37 @@ const apiKey = "AIzaSyCgw4YLLZrjbxgKkJiPFuxKhoG22NU28No";
 class App extends Component {
 
   state = {
-    books: {
-      image: undefined,
-      title: undefined,
-      subtitle: undefined,
-      authors: undefined,
-      description: undefined,
-      error: undefined
-    },
     booksArray: []
   };
 
   getBookInfo = async(event) => {
-    event.preventDefault(); // preventing web-page from refreshing
+    // preventing web-page from refreshing
+    event.preventDefault();
 
-    let inputQuery = event.target.elements.query.value; //input value 
+    //input value 
+    let inputQuery = event.target.elements.query.value;
 
+    //async request to Google Books API
     const api_url = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${inputQuery}&key=${apiKey}`);
     const data = await api_url.json();
-    console.log(data);
 
+    //changing state
     this.setState({
-      books: {
-        image: data.items[0].volumeInfo.imageLinks.thumbnail,
-        title: data.items[0].volumeInfo.title,
-        subtitle: data.items[0].volumeInfo.subtitle,
-        authors: data.items[0].volumeInfo.authors,
-        description: data.items[0].volumeInfo.description,
-        error: ""
-      },
       booksArray: data.items
     });
-
-    console.log(this.state.booksArray);
   };
 
   render () {
     return (
       <div className="App">
         <Form input={this.getBookInfo} />
-        {/* <Books
-          image={this.state.books.image}
-          title={this.state.books.title}
-          subtitle={this.state.books.subtitle}
-          authors={this.state.books.authors}
-          description={this.state.books.description}
-        /> */}
+
+        {/* an output of matched book array */}
         { this.state.booksArray.map (book => (
+
           <Books
             image={book.volumeInfo.imageLinks.thumbnail}
+            link={book.volumeInfo.infoLink}
             title={book.volumeInfo.title}
             subtitle={book.volumeInfo.subtitle}
             authors={book.volumeInfo.authors}

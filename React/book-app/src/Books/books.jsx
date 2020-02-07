@@ -4,7 +4,9 @@ import './books.css';
 const booksSection = props => {
     return (
         <div className="container">
-            <img src={props.image} alt={props.title} />
+            <a href={props.link} target="_blank" rel="noopener noreferrer">
+                <img src={props.image} alt={props.title} />
+            </a>
             <p className="container__item">{props.title}</p>
             <p className="container__item">{props.subtitle}</p>
             <p className="container__item">{props.authors}</p>
