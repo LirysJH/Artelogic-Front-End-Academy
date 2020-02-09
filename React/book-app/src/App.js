@@ -23,10 +23,14 @@ class App extends Component {
     fetch(`https://www.googleapis.com/books/v1/volumes?q=${inputQuery}&key=${apiKey}`);
     const data = await api_url.json();
 
-    //changing state
-    this.setState({
-      booksArray: data.items
-    });
+    if(data && inputQuery[0] !== " ")
+    {
+      //getting book array
+      this.setState({
+        booksArray: data.items
+      });
+    }
+    else {alert("Entered wrong value");}
   };
 
   render () {
@@ -36,16 +40,17 @@ class App extends Component {
 
         {/* an output of matched book array */}
         { this.state.booksArray.map (book => (
-
-          <Books
-            image={book.volumeInfo.imageLinks.thumbnail}
-            link={book.volumeInfo.infoLink}
-            title={book.volumeInfo.title}
-            subtitle={book.volumeInfo.subtitle}
-            authors={book.volumeInfo.authors}
-            description={book.volumeInfo.description}
-          />
-        ))          
+            <Books
+              image={book.volumeInfo.imageLinks.thumbnail}
+              link={book.volumeInfo.infoLink}
+              title={book.volumeInfo.title}
+              subtitle={book.volumeInfo.subtitle}
+              authors={book.volumeInfo.authors}
+              description={book.volumeInfo.description}
+              key={book.id}   //identifier
+            />     
+          )         
+        )
         }
       </div>
     )
