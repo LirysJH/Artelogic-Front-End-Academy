@@ -11,26 +11,32 @@ class App extends Component {
     booksArray: []
   };
 
-  getBookInfo = async(event) => {
+  getBookInfo = async (event) => {
     // preventing web-page from refreshing
     event.preventDefault();
 
     //input value 
     let inputQuery = event.target.elements.query.value;
 
-    //async request to Google Books API
-    const api_url = await
-    fetch(`https://www.googleapis.com/books/v1/volumes?q=${inputQuery}&key=${apiKey}`);
-    const data = await api_url.json();
-
-    if(data && inputQuery[0] !== " ")
+    if (inputQuery && inputQuery[0] !== " ")
     {
-      //getting book array
-      this.setState({
-        booksArray: data.items
-      });
+      //async request to Google Books API
+      const api_url = await
+      fetch(`https://www.googleapis.com/books/v1/volumes?q=${inputQuery}&key=${apiKey}`);
+      const data = await api_url.json();
+
+      if (data)
+      {
+        //getting book array
+        this.setState({
+          booksArray: data.items
+        });
+      }
     }
-    else {alert("Entered wrong value");}
+    else
+    {
+      alert("Incorrect request");
+    }
   };
 
   render () {
@@ -39,18 +45,20 @@ class App extends Component {
         <Form input={this.getBookInfo} />
 
         {/* an output of matched book array */}
-        { this.state.booksArray.map (book => (
-            <Books
-              image={book.volumeInfo.imageLinks.thumbnail}
-              link={book.volumeInfo.infoLink}
-              title={book.volumeInfo.title}
-              subtitle={book.volumeInfo.subtitle}
-              authors={book.volumeInfo.authors}
-              description={book.volumeInfo.description}
-              key={book.id}   //identifier
-            />     
-          )         
-        )
+        { this.state.booksArray && //if an array exists = there is an array in responded data
+          this.state.booksArray.map (book => (
+              <Books
+                image={book.volumeInfo.imageLinks.thumbnail}
+                link={book.volumeInfo.infoLink}
+                title={book.volumeInfo.title}
+                subtitle={book.volumeInfo.subtitle}
+                authors={book.volumeInfo.authors}
+                description={book.volumeInfo.description}
+                error={this.state.error}
+                key={book.id}   //identifier
+              />
+            )         
+          )
         }
       </div>
     )
