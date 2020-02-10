@@ -32,6 +32,12 @@ class App extends Component {
           booksArray: data.items
         });
       }
+      else
+      {
+        this.setState({
+          booksArray: data.items
+        });
+      }
     }
     else
     {
@@ -54,7 +60,6 @@ class App extends Component {
                 subtitle={book.volumeInfo.subtitle}
                 authors={book.volumeInfo.authors}
                 description={book.volumeInfo.description}
-                error={this.state.error}
                 key={book.id}   //identifier
               />
             )         
