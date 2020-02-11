@@ -5,12 +5,14 @@ const booksSection = props => {
     return (
         <div className="container">
             <a href={props.link} target="_blank" rel="noopener noreferrer" className="book-link">
-                <img src={props.image} alt={props.title} />
+                <img src={props.image} alt={props.title} className="book-img" />
             </a>
-            <p className="container__item">{props.title}</p>
-            <p className="container__item">{props.subtitle}</p>
-            <p className="container__item">{props.authors}</p>
-            <p className="container__item">{props.description}</p>
+            <ul className="container__items">
+              <li className="container__item">{props.title}</li>
+              <li className="container__item">{props.subtitle}</li>
+              <li className="container__item">{props.authors}</li>
+              <li className="container__item">{props.description}</li>
+            </ul>
         </div>
     );
 };

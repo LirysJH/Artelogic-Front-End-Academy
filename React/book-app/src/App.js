@@ -25,7 +25,7 @@ class App extends Component {
       const api_url = await
       fetch(`https://www.googleapis.com/books/v1/volumes?q=${inputQuery}&key=${apiKey}`);
       const data = await api_url.json();
-      
+
       if (data.items)
       {
         //getting book array

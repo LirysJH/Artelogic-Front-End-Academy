@@ -3,7 +3,15 @@
     margin: 15px auto;
 }
 
-.container .container__item {
+.container .book-img {
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, .3);
+}
+
+.container .container__items {
+    list-style-type: none;
+}
+
+.container .container__items .container__item {
     margin: 10px;
 }
 
