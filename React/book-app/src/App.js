@@ -8,7 +8,8 @@ const apiKey = "AIzaSyCgw4YLLZrjbxgKkJiPFuxKhoG22NU28No";
 class App extends Component {
 
   state = {
-    booksArray: []
+    booksArray: [],
+    error: null
   };
 
   getBookInfo = async (event) => {
@@ -24,24 +25,26 @@ class App extends Component {
       const api_url = await
       fetch(`https://www.googleapis.com/books/v1/volumes?q=${inputQuery}&key=${apiKey}`);
       const data = await api_url.json();
-
-      if (data)
+      
+      if (data.items)
       {
         //getting book array
         this.setState({
-          booksArray: data.items
+          booksArray: data.items,
+          error: null
         });
       }
       else
       {
         this.setState({
-          booksArray: data.items
+          booksArray: undefined,
+          error: "Sorry, nothing found"
         });
       }
     }
     else
     {
-      alert("Incorrect request");
+      alert("Incorrect request. Type something or check whitespace at the beginning");
     }
   };
 
@@ -49,7 +52,7 @@ class App extends Component {
     return (
       <div className="App">
         <Form input={this.getBookInfo} />
-
+        <p>{this.state.error}</p>
         {/* an output of matched book array */}
         { this.state.booksArray && //if an array exists = there is an array in responded data
           this.state.booksArray.map (book => (
