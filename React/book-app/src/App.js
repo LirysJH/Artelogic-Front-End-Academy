@@ -12,6 +12,13 @@ class App extends Component {
     error: null
   };
 
+  settingState(array, errorMessage) {
+    this.setState({
+      booksArray: array,
+      error: errorMessage
+    });
+  };
+
   getBookInfo = async (event) => {
     // preventing web-page from refreshing
     event.preventDefault();
@@ -25,20 +32,11 @@ class App extends Component {
       fetch(`https://www.googleapis.com/books/v1/volumes?q=${inputQuery.trim()}&key=${apiKey}`);
       const data = await getBook.json();
 
-      if (data.items)
-      {
-        this.setState({
-          booksArray: data.items,
-          error: null
-        });
-      }
-      else
-      {
-        this.setState({
-          booksArray: undefined,
-          error: "Sorry, nothing found"
-        });
-      }
+      data.items
+      ?
+        this.settingState(data.items, null)
+      :
+        this.settingState(undefined, "Sorry, nothing found");
     }
     else
     {
