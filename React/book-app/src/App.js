@@ -52,9 +52,9 @@ class App extends Component {
     return (
       <div className="App">
         <Form input={this.getBookInfo} />
-        <p>{this.state.error}</p>
+        
         {/* an output of matched book array */}
-        { this.state.booksArray && //if an array exists = there is an array in responded data
+        { this.state.booksArray ? //if an array exists = there is an array in responded data
           this.state.booksArray.map (book => (
               <Books
                 image={book.volumeInfo.imageLinks.thumbnail}
@@ -66,7 +66,7 @@ class App extends Component {
                 key={book.id}   //identifier
               />
             )         
-          )
+          ) : <p>{this.state.error}</p>
         }
       </div>
     )
