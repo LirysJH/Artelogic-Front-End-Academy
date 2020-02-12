@@ -1,7 +1,8 @@
 import React from "react";
-import './books.css';
+import './Books.css';
 
-const booksSection = props => {
+const books = props => {
+
     return (
         <div className="container">
             <a href={props.link} target="_blank" rel="noopener noreferrer" className="book-link">
@@ -11,10 +12,10 @@ const booksSection = props => {
               <li className="container__item">{props.title}</li>
               <li className="container__item">{props.subtitle}</li>
               <li className="container__item">{props.authors}</li>
-              <li className="container__item">{props.description}</li>
+              <li className="container__item">{props.desc}</li>
             </ul>
         </div>
     );
 };
 
-export default booksSection;
+export default books;

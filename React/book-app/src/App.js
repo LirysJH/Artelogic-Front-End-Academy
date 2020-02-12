@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
-import Form from './Form/form.jsx';
-import Books from './Books/books.jsx';
+import Form from './Form/Form.jsx';
+import Books from './Books/Books.jsx';
 
 const apiKey = "AIzaSyCgw4YLLZrjbxgKkJiPFuxKhoG22NU28No";
 
@@ -54,17 +54,16 @@ class App extends Component {
         { this.state.booksArray
           ?
             this.state.booksArray.map (book => (
-                <Books
-                  image={book.volumeInfo.imageLinks.thumbnail}
-                  link={book.volumeInfo.infoLink}
-                  title={book.volumeInfo.title}
-                  subtitle={book.volumeInfo.subtitle}
-                  authors={book.volumeInfo.authors}
-                  description={book.volumeInfo.description}
-                  key={book.id}   //identifier
-                />
-              )         
-            )
+              <Books
+                image={book.volumeInfo.imageLinks.thumbnail}
+                link={book.volumeInfo.infoLink}
+                title={book.volumeInfo.title}
+                subtitle={book.volumeInfo.subtitle}
+                authors={book.volumeInfo.authors}
+                description={book.volumeInfo.description}
+                key={book.id}   //identifier
+              />
+            ))
           :
             <p>{this.state.error}</p>
         }

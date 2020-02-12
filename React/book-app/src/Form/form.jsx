@@ -1,7 +1,7 @@
 import React from "react";
-import './form.css';
+import './Form.css';
 
-const formSection = props => {
+const form = props => {
     return (
         <div className="container">
             <form onSubmit={props.input}>
@@ -18,4 +18,4 @@ const formSection = props => {
     );
 };
 
-export default formSection;
+export default form;
