@@ -10,7 +10,7 @@ const books = props => {
                 <img src={image} alt={title} className="book-img" />
                 <a href={link} target="_blank" rel="noopener noreferrer" className="book-link">
                     <div class="to-link-button">
-                        Read
+                        More
                     </div>
                 </a>                
             </div>            
