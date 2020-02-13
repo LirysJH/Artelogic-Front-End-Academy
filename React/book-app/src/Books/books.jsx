@@ -1,5 +1,5 @@
 import React from "react";
-import './Books.css';
+import './books.css';
 
 const books = props => {
     const {image, link, title, subtitle, authors, description} = props;
