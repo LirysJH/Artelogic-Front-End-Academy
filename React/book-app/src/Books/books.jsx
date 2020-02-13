@@ -9,12 +9,14 @@ const books = props => {
             <a href={link} target="_blank" rel="noopener noreferrer" className="book-link">
                 <img src={image} alt={title} className="book-img" />
             </a>
-            <ul className="container__items">
-              <li className="container__item">{title}</li>
-              <li className="container__item">{subtitle}</li>
-              <li className="container__item">{authors}</li>
-              <li className="container__item">{description}</li>
-            </ul>
+            <div className="container__items">
+                <ul>
+                <li className="item"><h3>{title}</h3></li>
+                <li className="item">{subtitle}</li>
+                <li className="item">{authors}</li>
+                <li className="item">{description}</li>
+                </ul>
+            </div>            
         </div>
     );
 };

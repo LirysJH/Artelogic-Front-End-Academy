@@ -1,18 +1,26 @@
 .container {
-    width: 80%;
+    display: -webkit-box;
+    display: flex;
+    position: relative;
+    align-items: center;
     margin: 15px auto;
+    padding: 15px;
+    background: #0fb9b1;
+    border-radius: 10px;
 }
 
 .container .book-img {
     box-shadow: 0 0 4px 2px rgba(0, 0, 0, .3);
 }
 
-.container .container__items {
-    list-style-type: none;
+.container .container__items {    
+    overflow-y: auto;
+    height: 215px;
 }
 
-.container .container__items .container__item {
-    margin: 10px;
+.container .container__items .item {
+    margin: 10px 25px;
+    list-style-type: none;
 }
 
 .container .book-link {

@@ -3,7 +3,7 @@ import './Form.css';
 
 const form = props => {
     return (
-        <div className="container">
+        <div className="form-container">
             <form onSubmit={props.input}>
                 <h2>Welcome to the club, buddy!</h2>
                 <input

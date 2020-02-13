@@ -1,15 +1,15 @@
-.container {
+.form-container {
     width: 80%;
     margin: 15px auto;
 }
 
-.container .input-field {
+.form-container .input-field {
     width: 600px;
     margin: 10px;
 }
 
-.container .input-field,
-.container .search-button {
+.form-container .input-field,
+.form-container .search-button {
     padding: 10px;
     border: 2px solid #344;
     border-radius: 10px;
@@ -17,13 +17,13 @@
     outline: none;
 }
 
-.container .search-button {
+.form-container .search-button {
     cursor: pointer;    
     background: none;
     transition: background ease-in-out .05s;
 }
 
-.container .search-button:hover {
+.form-container .search-button:hover {
     background: rgba(0, 0, 0, .1);
     transition: background ease-in-out .05s;
 }
