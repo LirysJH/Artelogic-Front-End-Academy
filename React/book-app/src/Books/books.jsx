@@ -6,14 +6,19 @@ const books = props => {
 
     return (
         <div className="container">
-            <a href={link} target="_blank" rel="noopener noreferrer" className="book-link">
+            <div className="container__imgBox">
                 <img src={image} alt={title} className="book-img" />
-            </a>
+                <a href={link} target="_blank" rel="noopener noreferrer" className="book-link">
+                    <div class="to-link-button">
+                        Read
+                    </div>
+                </a>                
+            </div>            
             <div className="container__items">
                 <ul>
-                <li className="item"><h3>{title}</h3></li>
-                <li className="item">{subtitle}</li>
-                <li className="item">{authors}</li>
+                <li className="item"><b>{title}</b></li>
+                <li className="item"><u>{subtitle}</u></li>
+                <li className="item"><i>{authors}</i></li>
                 <li className="item">{description}</li>
                 </ul>
             </div>            
