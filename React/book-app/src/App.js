@@ -4,6 +4,7 @@ import Form from './Form/Form.jsx';
 import Books from './Books/Books.jsx';
 
 const apiKey = "AIzaSyCgw4YLLZrjbxgKkJiPFuxKhoG22NU28No";
+//const {booksArray, errorMessage} = this.state;
 
 class App extends Component {
 
@@ -12,10 +13,10 @@ class App extends Component {
     error: null
   };
 
-  settingState(array, errorMessage) {
+  settingState(itemsArray, message) {
     this.setState({
-      booksArray: array,
-      error: errorMessage
+      booksArray: itemsArray,
+      error: message
     });
   };
 
@@ -45,13 +46,16 @@ class App extends Component {
   };
 
   render () {
+    const {booksArray, error} = this.state;
+    
     return (
       <div className="App">
         <Form input={this.getBookInfo} />
         
-        { this.state.booksArray
+        {        
+          booksArray
           ?
-            this.state.booksArray.map (book => (
+            booksArray.map (book => (
               <Books
                 image={book.volumeInfo.imageLinks.thumbnail}
                 link={book.volumeInfo.infoLink}
@@ -63,7 +67,7 @@ class App extends Component {
               />
             ))
           :
-            <p>{this.state.error}</p>
+            <p>{error}</p>
         }
       </div>
     )
