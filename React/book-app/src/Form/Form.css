@@ -1,0 +1,37 @@
+.form-container {
+    width: 90%;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.form-container .search-container {
+    display: flex;
+    position: relative;
+    padding: 10px;
+}
+
+.form-container .search-container .input-field {
+    width: 90%;
+    margin: 0 5px;
+}
+
+.form-container .search-container .input-field,
+.form-container .search-container .search-button {
+    padding: 10px;
+    border: 2px solid #344;
+    border-radius: 10px;
+    background: none;
+    outline: none;
+}
+
+.form-container .search-container .search-button {
+    width: 5%;
+    cursor: pointer;    
+    background: none;
+    transition: background ease-in-out .05s;
+}
+
+.form-container .search-container .search-button:hover {
+    background: rgba(0, 0, 0, .1);
+    transition: background ease-in-out .05s;
+}

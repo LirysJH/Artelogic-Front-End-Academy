@@ -1,0 +1,58 @@
+.container {
+    display: -webkit-box;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 15px auto;
+    padding: 15px;
+    background: #0fb9b1;
+    border-radius: 10px;
+}
+
+.container .container__imgBox {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: 100%;
+    width: 15%;
+}
+
+.container .container__imgBox .book-link {
+    outline: none;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.container .container__imgBox .book-link .to-link-button {
+    padding: 5px 20px;
+    margin: 10px 0 0;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: none;
+    transition: background ease-in-out .5s;
+    cursor: pointer;
+}
+
+.container .container__imgBox .book-link .to-link-button:hover {
+    background: #fff;
+    transition: background ease-in-out .5s;
+}
+
+.container .container__imgBox .book-img {
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, .3);
+}
+
+.container .container__items {    
+    overflow-y: auto;
+    height: 215px;
+    width: 85%;
+}
+
+.container .container__items .item {
+    margin: 10px 25px;
+    list-style-type: none;
+    font-size: 16px;
+}
