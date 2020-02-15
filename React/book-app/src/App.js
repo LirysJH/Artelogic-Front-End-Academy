@@ -32,7 +32,6 @@ class App extends Component {
       fetch(`https://www.googleapis.com/books/v1/volumes?q=${inputQuery.trim()}
       &startIndex=0&maxResults=40&key=${apiKey}`);
       const data = await getBook.json();
-      console.log(data);
 
       data.items
       ?
