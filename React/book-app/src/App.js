@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
-import Form from './Form/form.jsx';
-import Books from './Books/books.jsx';
+import Form from './Form/Form.jsx';
+import Books from './Books/Books.jsx';
 
 const apiKey = "AIzaSyCgw4YLLZrjbxgKkJiPFuxKhoG22NU28No";
 
