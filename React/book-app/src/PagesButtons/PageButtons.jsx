@@ -11,7 +11,6 @@ const buttons = props => {
         {
             items.push(<button className="page" key={page}>{page}</button>);
         }
-        console.log(items);
     }
 
     return (
