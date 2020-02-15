@@ -1,0 +1,20 @@
+.button-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.page {
+    padding: 10px;
+    margin: 0 10px 5px;
+    background: #2980b9;
+    border: none;
+    border-radius: 5px;
+    transition: background ease-in-out .5s;
+    cursor: pointer;
+}
+
+.page:hover {
+    background: #1abc9c;
+    transition: background ease-in-out .5s;
+}

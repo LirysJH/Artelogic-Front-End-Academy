@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import Form from './Form/Form.jsx';
 import Books from './Books/Books.jsx';
+import PageButtons from './PagesButtons/PageButtons.jsx';
 
 const apiKey = "AIzaSyCgw4YLLZrjbxgKkJiPFuxKhoG22NU28No";
 
@@ -84,9 +85,14 @@ class App extends Component {
                 description={book.volumeInfo.description}
                 key={book.id}   //identifier
               />
+              
             ))
           :
             <p className="centered">{error}</p>
+        }
+        {
+          pages &&
+          <PageButtons pages={pages}/>
         }
       </div>
     )
