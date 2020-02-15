@@ -29,14 +29,16 @@ class App extends Component {
     if (inputQuery)
     {
       const getBook = await
-      fetch(`https://www.googleapis.com/books/v1/volumes?q=${inputQuery.trim()}&key=${apiKey}`);
+      fetch(`https://www.googleapis.com/books/v1/volumes?q=${inputQuery.trim()}
+      &startIndex=0&maxResults=40&key=${apiKey}`);
       const data = await getBook.json();
+      console.log(data);
 
       data.items
       ?
         this.settingState(data.items, null)
       :
-        this.settingState(undefined, "Sorry, nothing found");
+        this.settingState(null, "Sorry, nothing found");
     }
     else
     {
@@ -44,17 +46,38 @@ class App extends Component {
     }
   };
 
+  pagination = (querySet, currentPage, rows) => {
+    if(querySet)
+    {
+      let trimBegin = (currentPage - 1) * rows;
+      let trimEnd = trimBegin + rows;
+  
+      let trimedData = querySet.slice(trimBegin, trimEnd);
+      let pages = Math.ceil(querySet.length/rows);
+  
+      return {
+          querySet: trimedData,
+          pages: pages 
+      };
+    }    
+  };
+
   render () {
     const {booksArray, error} = this.state;
-    
+
+    const bookList = this.pagination(booksArray, 1, 5);
+    console.log(bookList);
+    const {querySet, pages} = {...bookList};
+    console.log(querySet, pages);
+
     return (
       <div className="App">
         <Form input={this.getBookInfo} />
         
         {        
-          booksArray
+          querySet //booksArray
           ?
-            booksArray.map (book => (
+            querySet.map (book => (
               <Books
                 image={book.volumeInfo.imageLinks.thumbnail}
                 link={book.volumeInfo.infoLink}
@@ -66,7 +89,7 @@ class App extends Component {
               />
             ))
           :
-            <p>{error}</p>
+            <p className="centered">{error}</p>
         }
       </div>
     )
