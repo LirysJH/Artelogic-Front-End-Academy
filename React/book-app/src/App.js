@@ -66,9 +66,7 @@ class App extends Component {
     const {booksArray, error} = this.state;
 
     const bookList = this.pagination(booksArray, 1, 5);
-    console.log(bookList);
     const {querySet, pages} = {...bookList};
-    console.log(querySet, pages);
 
     return (
       <div className="App">
