@@ -9,7 +9,7 @@ const buttons = props => {
     {
         for(let page=1; page<= pages; page++)
         {
-            items.push(<button className="page">{page}</button>);
+            items.push(<button className="page" key={page}>{page}</button>);
         }
         console.log(items);
     }
