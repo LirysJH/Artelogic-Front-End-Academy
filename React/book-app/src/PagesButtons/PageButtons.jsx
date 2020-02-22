@@ -3,13 +3,20 @@ import './PageButtons.css';
 
 const buttons = props => {
     const {pages} = props;
-    const items = [];
+    let items = [];
     
     if(pages)
     {
         for(let page=1; page<= pages; page++)
         {
-            items.push(<button className="page" key={page}>{page}</button>);
+            items.push(<button
+                            className="page"
+                            value={page}
+                            key={page}
+                            onClick={props.onClick}
+                            >
+                                {page}
+                        </button>);
         }
     }
 

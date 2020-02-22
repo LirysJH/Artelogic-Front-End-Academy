@@ -3,6 +3,7 @@ import './App.css';
 import Form from './Form/Form.jsx';
 import Books from './Books/Books.jsx';
 import PageButtons from './PagesButtons/PageButtons.jsx';
+import Pagination from './Pagination/Pagination.jsx';
 
 const apiKey = "AIzaSyCgw4YLLZrjbxgKkJiPFuxKhoG22NU28No";
 
@@ -10,10 +11,11 @@ class App extends Component {
 
   state = {
     booksArray: [],
-    error: null
+    error: null,
+    currentPage: 1
   };
 
-  settingState(itemsArray, message) {
+  settingState(itemsArray, message, page) {
     this.setState({
       booksArray: itemsArray,
       error: message
@@ -36,9 +38,9 @@ class App extends Component {
 
       data.items
       ?
-        this.settingState(data.items, null)
+        this.settingState(data.items, null, 1)
       :
-        this.settingState(null, "Sorry, nothing found");
+        this.settingState(null, "Sorry, nothing found", 1);
     }
     else
     {
@@ -57,23 +59,38 @@ class App extends Component {
   
       return {
           querySet: trimedData,
-          pages: pages 
+          pages: pages
       };
     }    
+  };
+
+  buttonClicked = event => {
+    let currentPage = event.target.value;
+
+    this.setState({
+      currentPage: currentPage
+    });
   };
 
   render () {
     const {booksArray, error} = this.state;
 
-    const bookList = this.pagination(booksArray, 1, 5);
+    const bookList = this.pagination(booksArray, this.state.currentPage, 5);
     const {querySet, pages} = {...bookList};
 
     return (
       <div className="App">
         <Form input={this.getBookInfo} />
         
+        {
+          pages
+          ?
+            <PageButtons pages={pages} onClick={this.buttonClicked}/>
+          :
+            null
+        }
         {        
-          querySet //booksArray
+          querySet
           ?
             querySet.map (book => (
               <Books
@@ -83,7 +100,7 @@ class App extends Component {
                 subtitle={book.volumeInfo.subtitle}
                 authors={book.volumeInfo.authors}
                 description={book.volumeInfo.description}
-                key={book.id}   //identifier
+                key={book.id}
               />
               
             ))
@@ -91,8 +108,11 @@ class App extends Component {
             <p className="centered">{error}</p>
         }
         {
-          pages &&
-          <PageButtons pages={pages}/>
+          pages
+          ?
+            <PageButtons pages={pages} onClick={this.buttonClicked}/>
+          :
+            null
         }
       </div>
     )
