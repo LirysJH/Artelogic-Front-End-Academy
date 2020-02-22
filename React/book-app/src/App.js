@@ -17,7 +17,8 @@ class App extends Component {
   settingState(itemsArray, message, page) {
     this.setState({
       booksArray: itemsArray,
-      error: message
+      error: message,
+      currentPage: page
     });
   };
 
@@ -81,13 +82,6 @@ class App extends Component {
       <div className="App">
         <Form input={this.getBookInfo} />
         
-        {
-          pages
-          ?
-            <PageButtons pages={pages} onClick={this.buttonClicked}/>
-          :
-            null
-        }
         {        
           querySet
           ?
