@@ -3,7 +3,6 @@ import './App.css';
 import Form from './Form/Form.jsx';
 import Books from './Books/Books.jsx';
 import PageButtons from './PagesButtons/PageButtons.jsx';
-import Pagination from './Pagination/Pagination.jsx';
 
 const apiKey = "AIzaSyCgw4YLLZrjbxgKkJiPFuxKhoG22NU28No";
 
