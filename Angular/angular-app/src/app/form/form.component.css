@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 10%;
+}
+
+.wrapper .wrapper__caption,
+.wrapper .wrapper__box .wrapper__box__vehicle-data {
+    margin: 10px;
+}
+
+.wrapper .wrapper__box {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: 3%;
+}
+
+.wrapper .wrapper__box .wrapper__box__vehicle-data,
+.wrapper .wrapper__box .wrapper__box__search-button {
+    margin: 0 5px;
+}
+
+.wrapper .wrapper__box .wrapper__box__vehicle-data {
+    padding: 5px 10px;
+    border: 2px solid #000;
+    outline: none;
+    border-radius: 10px;
+    width: 15%;
+}
+
+/*.wrapper .wrapper__box .wrapper__box__vehicle-data.vehicle-make {}
+.wrapper .wrapper__box .wrapper__box__vehicle-data.vehicle-model {}
+.wrapper .wrapper__box .wrapper__box__vehicle-data.vehicle-year {}*/
+
+.wrapper .wrapper__box .wrapper__box__search-button {
+    border: 2px solid #000;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.wrapper .wrapper__box .wrapper__box__search-button:hover {
+    background: rgba(0, 0, 0, .15);
+}
+
+.wrapper .wrapper__box .wrapper__box__search-button .fa {
+    color: #000;
+}
