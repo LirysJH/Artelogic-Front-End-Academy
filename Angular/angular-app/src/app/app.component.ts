@@ -1,12 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Vehicle } from './vehicle.model';
+import { DataService } from './data.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'angular-app';
-  /* http://api.carsxe.com/specs?key=<CarsXE_API_Key>&year=2004&make=toyota&model=camry */
-  
+export class AppComponent implements OnInit{
+  vehicles$: Vehicle[];
+
+  constructor(private dataService: DataService) {}
+
+  ngOnInit(){
+    return this.dataService.getVehicles()
+    .subscribe( data => this.vehicles$ = data );
+  }
 }

@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class FormComponent implements OnInit {
 
   allowSendRequest: boolean = false;
-  vehicleMake: string = "";
-  vehicleModel: string = "";
-  vehicleYear: string = "";
+  vehicleMake: string;
+  vehicleModel: string;
+  vehicleYear: string;
 
   response = "Clicked";
 
@@ -46,7 +46,9 @@ export class FormComponent implements OnInit {
     this.onCheckEnteredData();
     if(this.allowSendRequest)
     {
-      console.log("Clicked");
+      this.http.get<any>('https://api.npms.io/v2/search?q=scope:angular').subscribe(data => {
+        console.log(data);
+      })
     }
   };
 
