@@ -46,9 +46,7 @@ export class FormComponent implements OnInit {
     this.onCheckEnteredData();
     if(this.allowSendRequest)
     {
-      this.http.get<any>('https://api.npms.io/v2/search?q=scope:angular').subscribe(data => {
-        console.log(data);
-      })
+      
     }
   };
 
