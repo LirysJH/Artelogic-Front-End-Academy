@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Vehicle } from './vehicle.model';
 import { DataService } from './data.service';
+import { FormComponent } from './form/form.component';
 
 @Component({
   selector: 'app-root',
@@ -10,10 +11,13 @@ import { DataService } from './data.service';
 export class AppComponent implements OnInit{
   vehicles$: Vehicle[];
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService, private form: FormComponent) {}
 
   ngOnInit(){
-    return this.dataService.getVehicles()
-    .subscribe( data => this.vehicles$ = data );
+    if(this.form.allowSendRequest)
+    {
+      return this.dataService.getVehicles()
+      .subscribe( data => this.vehicles$ = data );
+    }
   }
 }
