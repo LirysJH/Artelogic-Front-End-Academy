@@ -5,12 +5,12 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
-import { VehicleDataOutputComponent } from './vehicle-data-output/vehicle-data-output.component';
+import { DataService } from './services/data.service';
 
 @NgModule({
-  declarations: [AppComponent, FormComponent, VehicleDataOutputComponent],
+  declarations: [AppComponent, FormComponent],
   imports: [ BrowserModule, FormsModule, HttpClientModule ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

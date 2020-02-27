@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Vehicle } from './vehicle.model';
-import { DataService } from './data.service';
+import { Vehicles } from './helpers/vehicle.model';
+import { DataService } from './services/data.service';
 import { FormComponent } from './form/form.component';
 
 @Component({
@@ -9,15 +9,12 @@ import { FormComponent } from './form/form.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  vehicles$: Vehicle[];
+  vehicles$: Vehicles[];
 
   constructor(private dataService: DataService, private form: FormComponent) {}
 
   ngOnInit(){
-    if(this.form.allowSendRequest)
-    {
-      return this.dataService.getVehicles()
+    return this.dataService.getVehicles()
       .subscribe( data => this.vehicles$ = data );
-    }
   }
 }
