@@ -1,24 +1,12 @@
 <div class="wrapper">
-    <h3 class="wrapper__caption">Welcome! Please, enter required car info</h3>
+    <h3 class="wrapper__caption">Welcome!</h3>
     <div class="wrapper__box">
        <input
             class="wrapper__box__vehicle-data vehicle-make"
-            type="text" placeholder="Vehicle make (ex.: toyota)"
-            (input)="getVehicleMake($event)"
+            type="text" placeholder="Enter the address"
+            (input)="getAddress($event)"
         />
-       <input
-            class="wrapper__box__vehicle-data vehicle-model"
-            type="text"
-            placeholder="Vehicle model (ex.: corolla)"
-            (input)="getVehicleModel($event)"
-        />
-       <input
-            class="wrapper__box__vehicle-data vehicle-year"
-            type="text"
-            placeholder="Vehicle year (ex.: 2004)"
-            (input)="getVehicleYear($event)"
-        />
-       <button class="wrapper__box__search-button" (click)="onSearchButtonClicked()"><i class="fa fa-search"></i></button>
+       <button class="wrapper__box__search-button" (click)="onCheckEnteredData()"><i class="fa fa-search"></i></button>
     </div>  
     <div class="wrapper__data-box">
         <p *ngIf="allowSendRequest">{{ response }}</p>

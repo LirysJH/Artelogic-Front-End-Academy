@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Vehicles } from './helpers/vehicle.model';
+import { User } from './helpers/users.model';
 import { DataService } from './services/data.service';
 import { FormComponent } from './form/form.component';
 
@@ -9,12 +9,12 @@ import { FormComponent } from './form/form.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  vehicles$: Vehicles[];
+  users$: User[];
 
   constructor(private dataService: DataService, private form: FormComponent) {}
 
   ngOnInit(){
-    return this.dataService.getVehicles()
-      .subscribe( data => this.vehicles$ = data );
+    return this.dataService.getUsers()
+      .subscribe( data => this.users$ = data );
   }
 }

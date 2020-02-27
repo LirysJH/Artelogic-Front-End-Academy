@@ -13,9 +13,10 @@ import { Injectable } from '@angular/core';
 export class FormComponent implements OnInit {
 
   allowSendRequest: boolean = false;
-  vehicleMake: string;
-  vehicleModel: string;
-  vehicleYear: string;
+  users: string;
+
+  address: string;
+  city: string;
 
   response = "Clicked";
 
@@ -25,7 +26,7 @@ export class FormComponent implements OnInit {
   }
 
   onCheckEnteredData(){
-    if(this.vehicleMake !== "" && this.vehicleModel !== "" && this.vehicleYear !== "")
+    if(this.city)
     {
       this.allowSendRequest = true;
     }
@@ -35,24 +36,27 @@ export class FormComponent implements OnInit {
     }
   };
 
-  getVehicleMake(event: Event){
-    this.vehicleMake = (<HTMLInputElement>event.target).value;
-  };
-
-  getVehicleModel(event: Event){
-    this.vehicleModel = (<HTMLInputElement>event.target).value;
-  };
-
-  getVehicleYear(event: Event){
-    this.vehicleYear = (<HTMLInputElement>event.target).value;
+  getUsers(event: Event){
+    this.address = (<HTMLInputElement>event.target).value.trim();
   };
 
   onSearchButtonClicked(){
     this.onCheckEnteredData();
     if(this.allowSendRequest)
     {
-      
+      /*fetch("https://vindecoder.p.rapidapi.com/decode_vin?vin=4F2YU09161KM33122", {
+        "method": "GET",
+        "headers": {
+          "x-rapidapi-host": "vindecoder.p.rapidapi.com",
+          "x-rapidapi-key": "dce44f373fmsh56a43391357851bp1e8124jsnba4bbaf6b2de"
+        }
+      })
+      .then(response => {
+        console.log(response);
+      })
+      .catch(err => {
+        console.log(err);
+      });*/
     }
-  };
-
+  }
 }
