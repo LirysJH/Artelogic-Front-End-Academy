@@ -9,7 +9,8 @@ import { FormComponent } from '../form/form.component';
 })
 export class DataService {
   url: string = "api.openweathermap.org/data/2.5/weather";
-  key = Key;
+  //key = Key;
+  key: string = "1153d0b2f3568f77cbf285830028b843";
   city: string = "Lviv";
   country: string = "Ukraine";
 

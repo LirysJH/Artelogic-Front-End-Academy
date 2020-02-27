@@ -37,7 +37,7 @@ export class FormComponent implements OnInit {
   };
 
   getUsers(event: Event){
-    this.address = (<HTMLInputElement>event.target).value.trim();
+    this.users = (<HTMLInputElement>event.target).value.trim();
   };
 
   onSearchButtonClicked(){
