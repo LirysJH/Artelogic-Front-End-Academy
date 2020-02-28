@@ -5,15 +5,13 @@
             class="wrapper__box__city"
             id="city"
             list="cities"
-            type="city" placeholder="Enter city to search for a weather"
+            type="city"
+            placeholder="Enter city to search for a weather"
+            autocomplete="address-level2"
             (input)="getUsers($event)"
         />
         <datalist id="cities">
-            <!--<option value="html">HTML</option>
-            <option value="java">Java</option>
-            <option value="perl">Perl</option>
-            <option value="php">PHP</option>
-            <option value="ruby-on-rails">Ruby on Rails</option>-->
+            <!-- <option value="html">HTML</option> -->
         </datalist>
        <button class="wrapper__box__search-button" (click)="onCheckEnteredData()">
            <i class="fa fa-search"></i>
@@ -24,4 +22,4 @@
             {{ response }}
         </p>
     </div>
-  </div>
+</div>

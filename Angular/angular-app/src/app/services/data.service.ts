@@ -11,14 +11,10 @@ import { FormComponent } from '../form/form.component';
 export class DataService {
   weatherUrl = 'api.openweathermap.org/data/2.5/weather';
   weatherKey = Key.weatherKey;
-  googleMapsUrl = 'https://maps.googleapis.com/maps/api/geocode/json';
-  googleMapsKey = Key.googleMapsKey;
 
-  address = '';
   city = 'Lviv';
   country = 'Ukraine';
 
-  cityApiUrl = `?address=${this.address},+Mountain+View,+CA&key=${this.googleMapsKey}`;
   // ?q={city},{state},{country code}
   weatherApiUrl = `${this.weatherUrl}?q=${this.city},${this.country}&appid=${this.weatherKey}`;
 

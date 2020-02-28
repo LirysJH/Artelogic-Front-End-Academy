@@ -38,6 +38,10 @@ export class FormComponent implements OnInit {
     this.users = (<HTMLInputElement>event.target).value.trim();
   }
 
+  getCities() {
+
+  }
+
   onSearchButtonClicked() {
     this.onCheckEnteredData();
     if (this.allowSendRequest) {
