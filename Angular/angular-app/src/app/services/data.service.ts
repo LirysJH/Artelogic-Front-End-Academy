@@ -18,7 +18,7 @@ export class DataService {
   city = 'Lviv';
   country = 'Ukraine';
 
-  addressApiUrl = `?address=${this.address},+Mountain+View,+CA&key=${this.googleMapsKey}`;
+  cityApiUrl = `?address=${this.address},+Mountain+View,+CA&key=${this.googleMapsKey}`;
   // ?q={city},{state},{country code}
   weatherApiUrl = `${this.weatherUrl}?q=${this.city},${this.country}&appid=${this.weatherKey}`;
 

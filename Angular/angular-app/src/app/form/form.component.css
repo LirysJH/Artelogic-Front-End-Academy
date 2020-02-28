@@ -15,7 +15,7 @@
 }
 
 .wrapper .wrapper__caption,
-.wrapper .wrapper__box .wrapper__box__address {
+.wrapper .wrapper__box .wrapper__box__city {
     margin: 10px;
 }
 
@@ -27,17 +27,17 @@
     height: 3%;
 }
 
-.wrapper .wrapper__box .wrapper__box__address,
+.wrapper .wrapper__box .wrapper__box__city,
 .wrapper .wrapper__box .wrapper__box__search-button {
     margin: 0 5px;
 }
 
-.wrapper .wrapper__box .wrapper__box__address {
+.wrapper .wrapper__box .wrapper__box__city {
     padding: 5px 10px;
     border: 2px solid #000;
     outline: none;
     border-radius: 10px;
-    width: 35%;
+    width: 40%;
 }
 
 .wrapper .wrapper__box .wrapper__box__search-button {

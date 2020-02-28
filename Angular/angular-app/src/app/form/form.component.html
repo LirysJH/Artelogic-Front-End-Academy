@@ -2,10 +2,19 @@
     <h3 class="wrapper__caption">Welcome!</h3>
     <div class="wrapper__box">
        <input
-            class="wrapper__box__address"
-            type="text" placeholder="Enter the address"
+            class="wrapper__box__city"
+            id="city"
+            list="cities"
+            type="city" placeholder="Enter city to search for a weather"
             (input)="getUsers($event)"
         />
+        <datalist id="cities">
+            <!--<option value="html">HTML</option>
+            <option value="java">Java</option>
+            <option value="perl">Perl</option>
+            <option value="php">PHP</option>
+            <option value="ruby-on-rails">Ruby on Rails</option>-->
+        </datalist>
        <button class="wrapper__box__search-button" (click)="onCheckEnteredData()">
            <i class="fa fa-search"></i>
         </button>
