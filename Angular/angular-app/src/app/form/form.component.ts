@@ -14,10 +14,8 @@ import { Injectable } from '@angular/core';
 export class FormComponent implements OnInit {
 
   allowSendRequest = false;
-  users: string;
-
-  address: string;
   city: string;
+  cities = [];
 
   response = 'Clicked';
 
@@ -32,32 +30,20 @@ export class FormComponent implements OnInit {
     } else {
       this.allowSendRequest = false;
     }
-  }
 
-  getUsers(event: Event) {
-    this.users = (<HTMLInputElement>event.target).value.trim();
-  }
-
-  getCities() {
-
-  }
-
-  onSearchButtonClicked() {
-    this.onCheckEnteredData();
     if (this.allowSendRequest) {
-      /*fetch("https://vindecoder.p.rapidapi.com/decode_vin?vin=4F2YU09161KM33122", {
-        "method": "GET",
-        "headers": {
-          "x-rapidapi-host": "vindecoder.p.rapidapi.com",
-          "x-rapidapi-key": "dce44f373fmsh56a43391357851bp1e8124jsnba4bbaf6b2de"
-        }
-      })
-      .then(response => {
-        console.log(response);
-      })
-      .catch(err => {
-        console.log(err);
-      });*/
+
+    }
+  }
+
+  /*getUsers(event: Event) {
+    this.users = (<HTMLInputElement>event.target).value.trim();
+  }*/
+
+  getCity(event: Event) {
+    this.city = (<HTMLInputElement>event.target).value.trim();
+    if (this.city) {
+
     }
   }
 }

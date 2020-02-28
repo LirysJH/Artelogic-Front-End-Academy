@@ -8,10 +8,10 @@
             type="city"
             placeholder="Enter city to search for a weather"
             autocomplete="address-level2"
-            (input)="getUsers($event)"
+            (input)="getCity($event)"
         />
         <datalist id="cities">
-            <!-- <option value="html">HTML</option> -->
+            {{ cities }}
         </datalist>
        <button class="wrapper__box__search-button" (click)="onCheckEnteredData()">
            <i class="fa fa-search"></i>
