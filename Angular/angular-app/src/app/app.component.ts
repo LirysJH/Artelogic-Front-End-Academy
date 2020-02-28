@@ -8,12 +8,14 @@ import { FormComponent } from './form/form.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+
+export class AppComponent implements OnInit {
   users$: User[];
 
-  constructor(private dataService: DataService, private form: FormComponent) {}
+  constructor(private dataService: DataService,
+              private form: FormComponent) {}
 
-  ngOnInit(){
+  ngOnInit() {
     return this.dataService.getUsers()
       .subscribe( data => this.users$ = data );
   }

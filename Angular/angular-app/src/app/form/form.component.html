@@ -2,13 +2,17 @@
     <h3 class="wrapper__caption">Welcome!</h3>
     <div class="wrapper__box">
        <input
-            class="wrapper__box__vehicle-data vehicle-make"
+            class="wrapper__box__address"
             type="text" placeholder="Enter the address"
             (input)="getUsers($event)"
         />
-       <button class="wrapper__box__search-button" (click)="onCheckEnteredData()"><i class="fa fa-search"></i></button>
+       <button class="wrapper__box__search-button" (click)="onCheckEnteredData()">
+           <i class="fa fa-search"></i>
+        </button>
     </div>  
     <div class="wrapper__data-box">
-        <p *ngIf="allowSendRequest">{{ response }}</p>
+        <p *ngIf="allowSendRequest">
+            {{ response }}
+        </p>
     </div>
   </div>

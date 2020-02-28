@@ -7,15 +7,21 @@ import { FormComponent } from '../form/form.component';
 @Injectable({
   providedIn: 'root'
 })
+
 export class DataService {
-  url = 'api.openweathermap.org/data/2.5/weather';
-  // key = Key;
-  key = '1153d0b2f3568f77cbf285830028b843';
+  weatherUrl = 'api.openweathermap.org/data/2.5/weather';
+  weatherKey = Key.weatherKey;
+  googleMapsUrl = 'https://maps.googleapis.com/maps/api/geocode/json';
+  googleMapsKey = Key.googleMapsKey;
+
+  address = '';
   city = 'Lviv';
   country = 'Ukraine';
 
+  addressApiUrl = `?address=${this.address},+Mountain+View,+CA&key=${this.googleMapsKey}`;
   // ?q={city},{state},{country code}
-  apiUrl = `${this.url}?q=${this.city},${this.country}&appid=${this.key}`;
+  weatherApiUrl = `${this.weatherUrl}?q=${this.city},${this.country}&appid=${this.weatherKey}`;
+
   usersApiUrl = 'http://jsonplaceholder.typicode.com/users';
 
   constructor(private http: HttpClient,

@@ -10,40 +10,37 @@ import { Injectable } from '@angular/core';
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css']
 })
+
 export class FormComponent implements OnInit {
 
-  allowSendRequest: boolean = false;
+  allowSendRequest = false;
   users: string;
 
   address: string;
   city: string;
 
-  response = "Clicked";
+  response = 'Clicked';
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  onCheckEnteredData(){
-    if(this.city)
-    {
+  onCheckEnteredData() {
+    if (this.city) {
       this.allowSendRequest = true;
-    }
-    else
-    {
+    } else {
       this.allowSendRequest = false;
     }
-  };
+  }
 
-  getUsers(event: Event){
+  getUsers(event: Event) {
     this.users = (<HTMLInputElement>event.target).value.trim();
-  };
+  }
 
-  onSearchButtonClicked(){
+  onSearchButtonClicked() {
     this.onCheckEnteredData();
-    if(this.allowSendRequest)
-    {
+    if (this.allowSendRequest) {
       /*fetch("https://vindecoder.p.rapidapi.com/decode_vin?vin=4F2YU09161KM33122", {
         "method": "GET",
         "headers": {
