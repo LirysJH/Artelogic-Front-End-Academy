@@ -12,7 +12,7 @@
         />
         <datalist id="cities">
             <div *ngFor="let city of citiesData">
-                <option value="{{ city.name }}">{{ city.subdivision }}</option>
+                <option value="{{ city.name }}, {{ city.name_ua }}">{{ city.subdivision }}</option>
             </div>            
         </datalist>
         <button class="wrapper__box__search-button" (click)="onCheckEnteredData()">
