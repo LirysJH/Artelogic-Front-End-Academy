@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { User } from '../helpers/users.model';
 import { Key } from '../key/key';
+import { IWeather } from '../helpers/weather.data';
+// import { map } from 'rxjs/operators';
 import { FormComponent } from '../form/form.component';
 
 @Injectable({
@@ -9,20 +10,17 @@ import { FormComponent } from '../form/form.component';
 })
 
 export class DataService {
-  weatherUrl = 'api.openweathermap.org/data/2.5/weather';
+  weatherUrl = 'https://api.openweathermap.org/data/2.5/weather';
   weatherKey = Key.weatherKey;
 
-  city = this.form.cityName;
+  city: 'Lviv';
 
-  // ?q={city},{state},{country code}
-  weatherApiUrl = `${this.weatherUrl}?q=${this.city}&appid=${this.weatherKey}`;
-
-  usersApiUrl = 'http://jsonplaceholder.typicode.com/users';
+  weatherApiUrl = `${this.weatherUrl}?q=${this.city}&appid=${this.weatherKey}&units=metric`;
 
   constructor(private http: HttpClient,
-              private form: FormComponent) { }
+              public form: FormComponent) { }
 
-  getUsers() {
-    return this.http.get<User[]>(this.usersApiUrl);
+  getWeather() {
+    return this.http.get<IWeather[]>(this.weatherApiUrl);
   }
 }

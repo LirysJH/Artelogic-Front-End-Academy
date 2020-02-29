@@ -14,29 +14,19 @@ import { cities } from '../helpers/uacities.model';
 
 export class FormComponent implements OnInit {
 
-  allowSendRequest = false;
-  citiesData = cities;
+  allowSendRequest = true;
+  citiesData = cities;  // fetch cities' info
   cityName: string;
-  response = 'Clicked';
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
-  onCheckEnteredData() {
+  onSearchData() {
     if (this.cityName) {
       this.allowSendRequest = true;
     } else {
       this.allowSendRequest = false;
     }
-
-    if (this.allowSendRequest) {
-
-    }
   }
-
-  /*getUsers(event: Event) {
-    this.users = (<HTMLInputElement>event.target).value.trim();
-  }*/
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from './helpers/users.model';
+import { IWeather } from './helpers/weather.data';
 import { DataService } from './services/data.service';
+// import { FormComponent } from './form/form.component';
 
 @Component({
   selector: 'app-root',
@@ -9,12 +10,12 @@ import { DataService } from './services/data.service';
 })
 
 export class AppComponent implements OnInit {
-  users$: User[];
+  weather$: IWeather[];
 
   constructor(private dataService: DataService) {}
 
   ngOnInit() {
-    return this.dataService.getUsers()
-      .subscribe( data => this.users$ = data );
+    return this.dataService.getWeather()
+      .subscribe( data => this.weather$ = data );
   }
 }

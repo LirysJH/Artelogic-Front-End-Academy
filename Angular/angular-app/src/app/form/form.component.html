@@ -12,16 +12,11 @@
         />
         <datalist id="cities">
             <div *ngFor="let city of citiesData">
-                <option value="{{ city.name }}, {{ city.name_ua }}">{{ city.subdivision }}</option>
+                <option value="{{ city.name }}">{{ city.subdivision }}, {{ city.name_ua }}</option>
             </div>            
         </datalist>
-        <button class="wrapper__box__search-button" (click)="onCheckEnteredData()">
+        <button class="wrapper__box__search-button" (click)="onSearchData()">
            <i class="fa fa-search"></i>
         </button>
-    </div>  
-    <div class="wrapper__data-box">
-        <p *ngIf="allowSendRequest">
-            {{ response }}
-        </p>
     </div>
 </div>
