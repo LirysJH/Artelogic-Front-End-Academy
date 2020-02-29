@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
 import { cities } from '../helpers/uacities.model';
+import { FormItem } from './form-item';
 
 @Injectable({
   providedIn: 'root'
@@ -13,12 +14,14 @@ import { cities } from '../helpers/uacities.model';
 })
 
 export class FormComponent implements OnInit {
-
+  formItem: FormItem;
   allowSendRequest = true;
   citiesData = cities;  // fetch cities' info
   cityName: string;
 
-  constructor() { }
+  constructor() {
+    this.formItem = new FormItem('London', 'Rainy', 23);
+  }
 
   ngOnInit(): void { }
 

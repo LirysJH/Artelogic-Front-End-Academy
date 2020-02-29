@@ -55,3 +55,20 @@
 .wrapper .wrapper__box .wrapper__box__search-button .fa {
     color: #000;
 }
+
+.wrapper .weatherItem {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 15px;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+
+.wrapper .weatherItem .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 10px;
+}

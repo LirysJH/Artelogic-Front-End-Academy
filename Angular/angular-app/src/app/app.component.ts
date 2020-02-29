@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IWeather } from './helpers/weather.data';
+import { IWeather } from './helpers/weather.interface';
 import { DataService } from './services/data.service';
 // import { FormComponent } from './form/form.component';
 

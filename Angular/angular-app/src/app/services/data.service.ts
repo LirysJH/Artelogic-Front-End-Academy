@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Key } from '../key/key';
-import { IWeather } from '../helpers/weather.data';
+import { IWeather } from '../helpers/weather.interface';
 // import { map } from 'rxjs/operators';
 import { FormComponent } from '../form/form.component';
 
