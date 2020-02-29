@@ -1,9 +1,9 @@
 {
    "cities": [
        {
-           "name": "Kiev",
+           "name": "Kyiv",
            "name_ua": "Київ",
-           "subdivision": "Kiev",
+           "subdivision": "Kyiv",
            "status": "S",
            "population": "2,847,200",
            "Photo": ""
@@ -25,9 +25,9 @@
            "Photo": ""
        },
        {
-           "name": "Odessa",
+           "name": "Odesa",
            "name_ua": "Одеса",
-           "subdivision": "Odessa Oblast",
+           "subdivision": "Odesa Oblast",
            "status": "O",
            "population": "1,029,049",
            "Photo": ""
@@ -251,7 +251,7 @@
        {
            "name": "Bila Tserkva",
            "name_ua": "Біла Церква",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "O",
            "population": "200,131",
            "Photo": ""
@@ -435,7 +435,7 @@
        {
            "name": "Brovary",
            "name_ua": "Бровари",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "O",
            "population": "86,839",
            "Photo": ""
@@ -443,7 +443,7 @@
        {
            "name": "Izmail",
            "name_ua": "Ізмаїл",
-           "subdivision": "Odessa Oblast",
+           "subdivision": "Odesa Oblast",
            "status": "O",
            "population": "84,815",
            "Photo": ""
@@ -699,7 +699,7 @@
        {
            "name": "Chornomorsk",
            "name_ua": "Чорноморськ",
-           "subdivision": "Odessa Oblast",
+           "subdivision": "Odesa Oblast",
            "status": "O",
            "population": "54,151",
            "Photo": ""
@@ -707,7 +707,7 @@
        {
            "name": "Boryspil",
            "name_ua": "Бориспіль",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "O",
            "population": "53,975",
            "Photo": ""
@@ -755,7 +755,7 @@
        {
            "name": "Fastiv",
            "name_ua": "Фастів",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "O",
            "population": "51,976",
            "Photo": ""
@@ -763,7 +763,7 @@
        {
            "name": "Bilhorod-Dnistrovskyi",
            "name_ua": "Білгород-Дністровський",
-           "subdivision": "Odessa Oblast",
+           "subdivision": "Odesa Oblast",
            "status": "O",
            "population": "51,890",
            "Photo": ""
@@ -875,7 +875,7 @@
        {
            "name": "Podilsk",
            "name_ua": "Подільськ",
-           "subdivision": "Odessa Oblast",
+           "subdivision": "Odesa Oblast",
            "status": "O",
            "population": "40,718",
            "Photo": ""
@@ -883,7 +883,7 @@
        {
            "name": "Irpin",
            "name_ua": "Ірпінь",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "O",
            "population": "40,593",
            "Photo": ""
@@ -891,7 +891,7 @@
        {
            "name": "Vasylkiv",
            "name_ua": "Васильків",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "O",
            "population": "39,722",
            "Photo": ""
@@ -995,7 +995,7 @@
        {
            "name": "Boiarka",
            "name_ua": "Боярка",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "R",
            "population": "35,968",
            "Photo": ""
@@ -1035,7 +1035,7 @@
        {
            "name": "Vyshneve",
            "name_ua": "Вишневе",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "R",
            "population": "34,465",
            "Photo": ""
@@ -1067,7 +1067,7 @@
        {
            "name": "Obukhiv",
            "name_ua": "Обухів",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "O",
            "population": "32,776",
            "Photo": ""
@@ -1107,7 +1107,7 @@
        {
            "name": "Pereiaslav-Khmelnytskyi",
            "name_ua": "Переяслав-Хмельницький",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "O",
            "population": "31,634",
            "Photo": ""
@@ -1233,7 +1233,7 @@
        {
            "name": "Bucha",
            "name_ua": "Буча",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "O",
            "population": "28,533",
            "Photo": ""
@@ -1390,7 +1390,7 @@
        {
            "name": "Slavutych",
            "name_ua": "Славутич",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "O",
            "population": "24,402"
        },
@@ -1418,7 +1418,7 @@
        {
            "name": "Yuzhne",
            "name_ua": "Южне",
-           "subdivision": "Odessa Oblast",
+           "subdivision": "Odesa Oblast",
            "status": "O",
            "population": "23,977"
        },
@@ -1439,7 +1439,7 @@
        {
            "name": "Yahotyn",
            "name_ua": "Яготин",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "R",
            "population": "23,659"
        },
@@ -1481,7 +1481,7 @@
        {
            "name": "Vyshhorod",
            "name_ua": "Вишгород",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "R",
            "population": "22,933"
        },
@@ -1502,7 +1502,7 @@
        {
            "name": "Kilia",
            "name_ua": "Кілія",
-           "subdivision": "Odessa Oblast",
+           "subdivision": "Odesa Oblast",
            "status": "R",
            "population": "22,594"
        },
@@ -1621,7 +1621,7 @@
        {
            "name": "Reni",
            "name_ua": "Рені",
-           "subdivision": "Odessa Oblast",
+           "subdivision": "Odesa Oblast",
            "status": "R",
            "population": "20,481"
        },
@@ -1656,7 +1656,7 @@
        {
            "name": "Balta",
            "name_ua": "Балта",
-           "subdivision": "Odessa Oblast",
+           "subdivision": "Odesa Oblast",
            "status": "R",
            "population": "19,962"
        },
@@ -1754,7 +1754,7 @@
        {
            "name": "Skvyra",
            "name_ua": "Сквира",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "R",
            "population": "18,126"
        },
@@ -1803,7 +1803,7 @@
        {
            "name": "Rozdilna",
            "name_ua": "Роздільна",
-           "subdivision": "Odessa Oblast",
+           "subdivision": "Odesa Oblast",
            "status": "R",
            "population": "17,754"
        },
@@ -1852,7 +1852,7 @@
        {
            "name": "Berezan",
            "name_ua": "Березань",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "O",
            "population": "17,367"
        },
@@ -1866,7 +1866,7 @@
        {
            "name": "Bolhrad",
            "name_ua": "Болград",
-           "subdivision": "Odessa Oblast",
+           "subdivision": "Odesa Oblast",
            "status": "R",
            "population": "17,353"
        },
@@ -1887,7 +1887,7 @@
        {
            "name": "Bohuslav",
            "name_ua": "Богуслав",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "R",
            "population": "17,135"
        },
@@ -1992,7 +1992,7 @@
        {
            "name": "Artsyz",
            "name_ua": "Арциз",
-           "subdivision": "Odessa Oblast",
+           "subdivision": "Odesa Oblast",
            "status": "R",
            "population": "16,370"
        },
@@ -2126,7 +2126,7 @@
        {
            "name": "Tetiiv",
            "name_ua": "Тетіїв",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "R",
            "population": "14,944"
        },
@@ -2196,7 +2196,7 @@
        {
            "name": "Biliaivka",
            "name_ua": "Біляївка",
-           "subdivision": "Odessa Oblast",
+           "subdivision": "Odesa Oblast",
            "status": "R",
            "population": "14,294"
        },
@@ -2210,7 +2210,7 @@
        {
            "name": "Ukrainka",
            "name_ua": "Українка",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "R",
            "population": "14,163"
        },
@@ -2238,7 +2238,7 @@
        {
            "name": "Kaharlyk",
            "name_ua": "Кагарлик",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "R",
            "population": "13,757"
        },
@@ -2295,14 +2295,14 @@
        {
            "name": "Tarascha",
            "name_ua": "Тараща",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "R",
            "population": "13,452"
        },
        {
            "name": "Myronivka",
            "name_ua": "Миронівка",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "R",
            "population": "13,368"
        },
@@ -2337,7 +2337,7 @@
        {
            "name": "Uzyn",
            "name_ua": "Узин",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "R",
            "population": "13,217"
        },
@@ -2639,7 +2639,7 @@
        {
            "name": "Tatarbunary",
            "name_ua": "Татарбунари",
-           "subdivision": "Odessa Oblast",
+           "subdivision": "Odesa Oblast",
            "status": "R",
            "population": "10,797"
        },
@@ -2828,7 +2828,7 @@
        {
            "name": "Kodyma",
            "name_ua": "Кодима",
-           "subdivision": "Odessa Oblast",
+           "subdivision": "Odesa Oblast",
            "status": "R",
            "population": "9,634"
        },
@@ -2842,14 +2842,14 @@
        {
            "name": "Berezivka",
            "name_ua": "Березівка",
-           "subdivision": "Odessa Oblast",
+           "subdivision": "Odesa Oblast",
            "status": "R",
            "population": "9,481"
        },
        {
            "name": "Ananyiv",
            "name_ua": "Ананьїв",
-           "subdivision": "Odessa Oblast",
+           "subdivision": "Odesa Oblast",
            "status": "R",
            "population": "9,476"
        },
@@ -2870,7 +2870,7 @@
        {
            "name": "Vylkove",
            "name_ua": "Вилкове",
-           "subdivision": "Odessa Oblast",
+           "subdivision": "Odesa Oblast",
            "status": "R",
            "population": "9,260"
        },
@@ -2961,7 +2961,7 @@
        {
            "name": "Teplodar",
            "name_ua": "Теплодар",
-           "subdivision": "Odessa Oblast",
+           "subdivision": "Odesa Oblast",
            "status": "O",
            "population": "8,830"
        },
@@ -3010,7 +3010,7 @@
        {
            "name": "Rzhyschiv",
            "name_ua": "Ржищів",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "O",
            "population": "8,447"
        },
@@ -3386,16 +3386,16 @@
            "population": "1,021"
        },
        {
-           "name": "Chernobyl",
+           "name": "Chornobyl",
            "name_ua": "Чорнобиль",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "R",
            "population": "704"
        },
        {
            "name": "Prypiat",
            "name_ua": "Прип'ять",
-           "subdivision": "Kiev Oblast",
+           "subdivision": "Kyiv Oblast",
            "status": "O",
            "population": "0"
        }

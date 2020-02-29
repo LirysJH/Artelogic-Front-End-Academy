@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from './helpers/users.model';
 import { DataService } from './services/data.service';
-import { FormComponent } from './form/form.component';
 
 @Component({
   selector: 'app-root',
@@ -12,8 +11,7 @@ import { FormComponent } from './form/form.component';
 export class AppComponent implements OnInit {
   users$: User[];
 
-  constructor(private dataService: DataService,
-              private form: FormComponent) {}
+  constructor(private dataService: DataService) {}
 
   ngOnInit() {
     return this.dataService.getUsers()

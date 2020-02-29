@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
+import { cities } from '../helpers/uacities.model';
 
 @Injectable({
   providedIn: 'root'
@@ -14,9 +15,8 @@ import { Injectable } from '@angular/core';
 export class FormComponent implements OnInit {
 
   allowSendRequest = false;
-  city: string;
-  cities = [];
-
+  citiesData = cities;
+  cityName: string;
   response = 'Clicked';
 
   constructor() { }
@@ -25,7 +25,7 @@ export class FormComponent implements OnInit {
   }
 
   onCheckEnteredData() {
-    if (this.city) {
+    if (this.cityName) {
       this.allowSendRequest = true;
     } else {
       this.allowSendRequest = false;
@@ -39,11 +39,4 @@ export class FormComponent implements OnInit {
   /*getUsers(event: Event) {
     this.users = (<HTMLInputElement>event.target).value.trim();
   }*/
-
-  getCity(event: Event) {
-    this.city = (<HTMLInputElement>event.target).value.trim();
-    if (this.city) {
-
-    }
-  }
 }

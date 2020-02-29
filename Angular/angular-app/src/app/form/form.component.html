@@ -5,15 +5,17 @@
             class="wrapper__box__city"
             id="city"
             list="cities"
-            type="city"
+            type="text"
             placeholder="Enter city to search for a weather"
-            autocomplete="address-level2"
-            (input)="getCity($event)"
+            autocomplete="off"
+            [(ngModel)]="cityName"
         />
         <datalist id="cities">
-            {{ cities }}
+            <div *ngFor="let city of citiesData">
+                <option value="{{ city.name }}">{{ city.subdivision }}</option>
+            </div>            
         </datalist>
-       <button class="wrapper__box__search-button" (click)="onCheckEnteredData()">
+        <button class="wrapper__box__search-button" (click)="onCheckEnteredData()">
            <i class="fa fa-search"></i>
         </button>
     </div>  
