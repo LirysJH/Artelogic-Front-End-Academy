@@ -20,6 +20,10 @@
 }
 
 .wrapper .wrapper__box {
+    width: 100%;
+}
+
+.wrapper .wrapper__box .form {
     display: flex;
     position: relative;
     justify-content: center;
@@ -27,12 +31,12 @@
     height: 3%;
 }
 
-.wrapper .wrapper__box .wrapper__box__city,
-.wrapper .wrapper__box .wrapper__box__search-button {
+.wrapper .wrapper__box .form .wrapper__box__city,
+.wrapper .wrapper__box .form .wrapper__box__search-button {
     margin: 0 5px;
 }
 
-.wrapper .wrapper__box .wrapper__box__city {
+.wrapper .wrapper__box .form .wrapper__box__city {
     padding: 5px 10px;
     border: 2px solid #000;
     outline: none;
@@ -40,7 +44,7 @@
     width: 40%;
 }
 
-.wrapper .wrapper__box .wrapper__box__search-button {
+.wrapper .wrapper__box .form .wrapper__box__search-button {
     border: 2px solid #000;
     outline: none;
     border-radius: 5px;
@@ -48,11 +52,11 @@
     cursor: pointer;
 }
 
-.wrapper .wrapper__box .wrapper__box__search-button:hover {
+.wrapper .wrapper__box .form .wrapper__box__search-button:hover {
     background: rgba(0, 0, 0, .15);
 }
 
-.wrapper .wrapper__box .wrapper__box__search-button .fa {
+.wrapper .wrapper__box .form .wrapper__box__search-button .fa {
     color: #000;
 }
 

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
 import { cities } from '../helpers/uacities.model';
 import { FormItem } from './form-item';
+import { DataService } from '../services/data.service';
 
 @Injectable({
   providedIn: 'root'
@@ -15,21 +16,38 @@ import { FormItem } from './form-item';
 
 export class FormComponent implements OnInit {
   formItem: FormItem;
-  allowSendRequest = true;
   citiesData = cities;  // fetch cities' info
   cityName: string;
 
-  constructor() {
-    this.formItem = new FormItem('London', 'Rainy', 23);
+  weatherItems: FormItem[];
+
+  constructor(private dataService: DataService) {
+    this.weatherItems = this.dataService.getWeatherItems();
   }
 
   ngOnInit(): void { }
 
-  onSearchData() {
-    if (this.cityName) {
-      this.allowSendRequest = true;
-    } else {
-      this.allowSendRequest = false;
-    }
+  onSubmit() {
+    this.dataService.searchWeatherData(this.cityName)
+    .subscribe(
+      (data: any) => {
+
+        let storage = {
+          name: '',
+          weather: [{
+            description: ''
+          }],
+          main: {
+            temp: 0
+          }
+        };
+        storage = data;
+        
+        const weatherItem = new FormItem(storage.name,
+                                         storage.weather[0].description,
+                                         storage.main.temp);
+        this.dataService.addWeatherItem(weatherItem);
+      }
+    );
   }
 }

@@ -1,31 +1,35 @@
 <div class="wrapper">
     <h3 class="wrapper__caption">Welcome!</h3>
     <div class="wrapper__box">
-       <input
+        <form (ngSubmit)="onSubmit()" class="form">
+            <input
             class="wrapper__box__city"
             id="city"
             list="cities"
             type="text"
+            name="city"
             placeholder="Enter city to search for a weather"
             autocomplete="off"
+            required
             [(ngModel)]="cityName"
-        />
-        <datalist id="cities">
-            <div *ngFor="let city of citiesData">
-                <option value="{{ city.name }}">{{ city.subdivision }}, {{ city.name_ua }}</option>
-            </div>            
-        </datalist>
-        <button class="wrapper__box__search-button" (click)="onSearchData()">
-           <i class="fa fa-search"></i>
-        </button>
+            />
+            <datalist id="cities">
+                <div *ngFor="let city of citiesData">
+                    <option value="{{ city.name }}">{{ city.subdivision }}, {{ city.name_ua }}</option>
+                </div>            
+            </datalist>
+            <button class="wrapper__box__search-button" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>       
     </div>
-    <article class="weatherItem">
+    <article class="weatherItem" *ngFor="let weatherItem of weatherItems">
         <div class="col">
-            <h3>{{ formItem.cityName }}</h3>
-            <p>{{ formItem.description }}</p>
+            <h3 ngControl="location">{{ weatherItem.cityName }}</h3>
+            <p>{{ weatherItem.description }}</p>
         </div>
         <div class="col">
-            <h4>{{ formItem.temperature }}°C</h4>
+            <h4>{{ weatherItem.temperature }}°C</h4>
         </div>
     </article>
 </div>
