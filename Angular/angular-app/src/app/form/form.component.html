@@ -25,11 +25,12 @@
     </div>
     <article class="weatherItem" *ngFor="let weatherItem of weatherItems">
         <div class="col">
-            <h3 ngControl="location">{{ weatherItem.cityName }}</h3>
-            <p>{{ weatherItem.description }}</p>
+            <h3>{{ weatherItem.cityName }}</h3>
+            <h5>{{ weatherItem.description }}</h5>
         </div>
         <div class="col">
-            <h4>{{ weatherItem.temperature }}°C</h4>
+            <h3>{{ weatherItem.temperature }}°C</h3>
+            <!-- <h5>{{ weatherItem.wind }}km/h</h5> the value isn't shown - ??? -->
         </div>
     </article>
 </div>

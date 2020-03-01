@@ -31,6 +31,6 @@ export class DataService {
 
     return this.http.get(weatherApiUrl)
             .pipe(map(response => response || []),
-            catchError(error => throwError(error.message || error)));
+              catchError(error => throwError(error.message || error)));
   }
 }

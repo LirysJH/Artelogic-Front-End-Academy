@@ -15,7 +15,7 @@ import { DataService } from '../services/data.service';
 })
 
 export class FormComponent implements OnInit {
-  formItem: FormItem;
+  // formItem: FormItem;
   citiesData = cities;  // fetch cities' info
   cityName: string;
 
@@ -39,13 +39,18 @@ export class FormComponent implements OnInit {
           }],
           main: {
             temp: 0
+          },
+          wind: {
+            speed: 0
           }
         };
         storage = data;
-        
+        console.log(data);
+        console.log(storage.wind.speed);
         const weatherItem = new FormItem(storage.name,
                                          storage.weather[0].description,
-                                         storage.main.temp);
+                                         storage.main.temp,
+                                         storage.wind.speed);
         this.dataService.addWeatherItem(weatherItem);
       }
     );
