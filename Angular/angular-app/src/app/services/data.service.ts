@@ -30,7 +30,7 @@ export class DataService {
     const weatherApiUrl = `${weatherUrl}?q=${cityName}&appid=${weatherKey}&units=metric`;
 
     return this.http.get(weatherApiUrl)
-            .pipe(map(response => response || []),
+            .pipe(map(response => response || {}),
               catchError(error => throwError(error.message || error)));
   }
 }
