@@ -65,8 +65,8 @@
     justify-content: center;
     width: 80%;
     margin: 15px;
-    border: 1px solid #000;
     border-radius: 15px;
+    box-shadow: 0 0 8px 5px rgba(0, 0, 0, .2);
 }
 
 .wrapper .weatherItem .col {
@@ -75,4 +75,21 @@
     align-items: center;
     width: 30%;
     padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.wrapper .weatherItem .col .city {
+    color: #f00;
+}
+
+.wrapper .weatherItem .col .weather {
+    color: #808080;
+}
+
+.wrapper .weatherItem .col .temperature {
+    color: #f7b731;
+}
+
+.wrapper .weatherItem .col .wind {
+    color: #2bcbba;
 }
