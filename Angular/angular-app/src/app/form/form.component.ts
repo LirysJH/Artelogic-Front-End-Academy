@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
-import { cities } from '../helpers/uacities.model';
+import { cities } from '../helpers/uacities.data';
 import { FormItem } from './form-item';
 import { DataService } from '../services/data.service';
 
@@ -15,7 +15,6 @@ import { DataService } from '../services/data.service';
 })
 
 export class FormComponent implements OnInit {
-  // formItem: FormItem;
   citiesData = cities;  // fetch cities' info
   cityName: string;
 
@@ -31,26 +30,10 @@ export class FormComponent implements OnInit {
     this.dataService.searchWeatherData(this.cityName)
     .subscribe(
       (data: any) => {
-
-        let storage = {
-          name: '',
-          weather: [{
-            description: ''
-          }],
-          main: {
-            temp: 0
-          },
-          wind: {
-            speed: 0
-          }
-        };
-        storage = data;
-        console.log(data);
-        console.log(storage.wind.speed);
-        const weatherItem = new FormItem(storage.name,
-                                         storage.weather[0].description,
-                                         storage.main.temp,
-                                         storage.wind.speed);
+        const weatherItem = new FormItem(data.name,
+                                         data.weather[0].description,
+                                         data.main.temp,
+                                         data.wind.speed);
         this.dataService.addWeatherItem(weatherItem);
       }
     );
