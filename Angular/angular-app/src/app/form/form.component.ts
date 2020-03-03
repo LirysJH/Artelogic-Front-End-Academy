@@ -28,7 +28,7 @@ export class FormComponent implements OnInit {
 
   onSubmit() {
     this.dataService.searchWeatherData(this.cityName)
-    .subscribe(
+    .subscribe( // comment
       (data: any) => {
         const weatherItem = new FormItem(data.name,
                                          data.weather[0].description,
