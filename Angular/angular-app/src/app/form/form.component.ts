@@ -17,6 +17,7 @@ import { DataService } from '../services/data.service';
 export class FormComponent implements OnInit {
   citiesData = cities;  // fetch cities' info
   cityName: string;
+  quantity: 5;
 
   weatherItems: FormItem[];
 

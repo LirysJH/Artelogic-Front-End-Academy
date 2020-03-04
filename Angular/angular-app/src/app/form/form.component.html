@@ -1,9 +1,9 @@
 <div class="wrapper">
     <h3 class="wrapper__caption">Welcome!</h3>
-    <div class="wrapper__box">
+    <div class="box">
         <form (ngSubmit)="onSubmit()" class="form">
             <input
-            class="wrapper__box__city"
+            class="form__city"
             id="city"
             list="cities"
             type="text"
@@ -13,24 +13,24 @@
             required
             [(ngModel)]="cityName"
             />
-            <datalist id="cities">
+            <datalist id="cities" class="form__datalist">
                 <div *ngFor="let city of citiesData">
                     <option value="{{ city.name }}">{{ city.subdivision }}, {{ city.name_ua }}</option>
                 </div>            
             </datalist>
-            <button class="wrapper__box__search-button" type="submit">
+            <button class="form__search-button" type="submit">
                 <i class="fa fa-search"></i>
             </button>
         </form>       
     </div>
     <article class="weatherItem" *ngFor="let weatherItem of weatherItems">
         <div class="col">
-            <h3 class="city">{{ weatherItem.cityName }}</h3>
-            <h5 class="weather">{{ weatherItem.description }}</h5>
+            <h3 class="weatherItem__city">{{ weatherItem.cityName }}</h3>
+            <h5 class="weatherItem__weather">{{ weatherItem.description }}</h5>
         </div>
         <div class="col">
-            <h3 class="temperature">{{ weatherItem.temperature }}°C</h3>
-            <h5 class="wind">{{ weatherItem.wind }} km/h</h5>
+            <h3 class="weatherItem__temperature">{{ weatherItem.temperature }}°C</h3>
+            <h5 class="weatherItem__wind">{{ weatherItem.wind }} km/h</h5>
         </div>
     </article>
 </div>

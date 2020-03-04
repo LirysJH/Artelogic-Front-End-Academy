@@ -15,15 +15,15 @@
 }
 
 .wrapper .wrapper__caption,
-.wrapper .wrapper__box .wrapper__box__city {
+.wrapper .form .form__city {
     margin: 10px;
 }
 
-.wrapper .wrapper__box {
+.wrapper .box {
     width: 100%;
 }
 
-.wrapper .wrapper__box .form {
+.wrapper .box .form {
     display: flex;
     position: relative;
     justify-content: center;
@@ -31,12 +31,12 @@
     height: 3%;
 }
 
-.wrapper .wrapper__box .form .wrapper__box__city,
-.wrapper .wrapper__box .form .wrapper__box__search-button {
+.wrapper .box .form .form__city,
+.wrapper .box .form .form__search-button {
     margin: 0 5px;
 }
 
-.wrapper .wrapper__box .form .wrapper__box__city {
+.wrapper .box .form .form__city {
     padding: 5px 10px;
     border: 2px solid #000;
     outline: none;
@@ -44,7 +44,7 @@
     width: 40%;
 }
 
-.wrapper .wrapper__box .form .wrapper__box__search-button {
+.wrapper .box .form .form__search-button {
     border: 2px solid #000;
     outline: none;
     border-radius: 5px;
@@ -52,11 +52,11 @@
     cursor: pointer;
 }
 
-.wrapper .wrapper__box .form .wrapper__box__search-button:hover {
+.wrapper .box .form .form__search-button:hover {
     background: rgba(0, 0, 0, .15);
 }
 
-.wrapper .wrapper__box .form .wrapper__box__search-button .fa {
+.wrapper .box .form .form__search-button .fa {
     color: #000;
 }
 
@@ -78,18 +78,18 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-.wrapper .weatherItem .col .city {
+.wrapper .weatherItem .col .weatherItem__city {
     color: #f00;
 }
 
-.wrapper .weatherItem .col .weather {
+.wrapper .weatherItem .col .weatherItem__weather {
     color: #808080;
 }
 
-.wrapper .weatherItem .col .temperature {
+.wrapper .weatherItem .col .weatherItem__temperature {
     color: #f7b731;
 }
 
-.wrapper .weatherItem .col .wind {
+.wrapper .weatherItem .col .weatherItem__wind {
     color: #2bcbba;
 }
