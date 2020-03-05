@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
-import { cities } from '../helpers/uacities.data';
+import { cities } from '../helpers/ua-cities.data';
 import { FormItem } from './form-item';
 import { DataService } from '../services/data.service';
 

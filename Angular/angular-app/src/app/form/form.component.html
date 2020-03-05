@@ -13,15 +13,15 @@
             required
             [(ngModel)]="cityName"
             />
-            <datalist id="cities" class="form__datalist">
+            <datalist id="cities" class="form__datalist"> <!--  [hidden]="cityName" ??? -->
                 <div *ngFor="let city of citiesData">
                     <option value="{{ city.name }}">{{ city.subdivision }}, {{ city.name_ua }}</option>
-                </div>            
+                </div>
             </datalist>
             <button class="form__search-button" type="submit">
                 <i class="fa fa-search"></i>
             </button>
-        </form>       
+        </form>
     </div>
     <article class="weatherItem" *ngFor="let weatherItem of weatherItems">
         <div class="col">
